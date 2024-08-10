@@ -1,0 +1,1099 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+a:active {
+    color: rgba(241,158,54,1);
+}
+html {
+    font-family: sans-serif;
+}
+/*.select-none {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}*/
+body {
+    background: #1D1C1D;
+    /*background: radial-gradient(circle, rgba(209,213,223,1) 0%, rgba(123,130,149,1) 15%, rgb(0, 0, 0) 75%);
+    /* background: radial-gradient(circle, rgba(253,237,201,1) 0%, rgba(241,158,54,1) 15%, rgba(23,23,23,1) 75%);
+    /* background: radial-gradient(circle, rgba(190,201,233,1) 0%, rgba(95,107,189,1) 15%, rgba(23,23,23,1) 75%); */
+    /* background: radial-gradient(circle, rgba(122,230,243,1) 10%, rgba(31,118,191,1) 25%, rgba(23,23,23,1) 75%); */
+    /* background: radial-gradient(circle, rgba(205,122,243,1) 0%, rgba(154,31,191,1) 15%, rgba(23,23,23,1) 75%); */
+
+    background-repeat: no-repeat;
+    min-height: 100vh;   
+}
+.haeder {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+.haeder a {
+    margin-right: 1rem;
+}
+.squad-container {
+    margin: 1.75rem auto;
+    width: 80%;
+    height: 4.5rem;
+    border-radius: 15px;
+    background-color: rgba(50, 49, 49, 0.3);
+    border: 2px solid rgb(43, 42, 42, 0.05);
+}
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0 1rem;
+}
+.login-detail {
+    display: flex;
+    align-items: center;
+}
+.profile {
+    width: 3rem;
+    height: 3rem;
+    background-color: rgb(16, 16, 16);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.profile span {
+    font-size: 2rem;
+    color: rgba(151, 151, 151, 0.773);
+}
+.user-data {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.75rem;
+}
+.name {
+    color: #ffffff;
+}
+.user-rank {
+    font-size: 0.75rem;
+    margin-top: 0.25rem;
+    color: #c1c1c1;
+}
+.coin-count-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.25rem;
+}
+.rank-container {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+.rank-bar {
+    display: flex;
+    align-items: center;
+    font-size: 1.25rem;
+}
+.rank-bar h3{
+    margin-right: 0.5rem;
+}
+
+.rank-text {
+    color: #CD7F32; /* Начальный цвет для ранга "Bronze" */
+    font-weight: bold;
+}
+.rank-text.bronze {
+    color: #cd7f32;
+}
+
+.rank-text.silver {
+    color: #c0c0c0;
+}
+
+.rank-text.gold {
+    color: #ffd700;
+}
+
+.rank-text.diamond {
+    color: #b9f2ff;
+}
+
+.rank-text.ruby {
+    color: #e0115f;
+}
+
+#rank {
+    font-weight: bold;
+}
+.coin-count-container img {
+    margin-right: 1rem;
+    width: 50px;
+
+
+}
+.coin-count-container h1 {
+    color: #ffffff;
+    font-size: 3.5rem;
+}
+.coin-container {
+    position: relative;
+    margin-top: 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.coin-container img {
+    box-shadow: 0 0 40px #CD7F32; /*rgba(255, 215, 0, 0.5); /* Свечение */
+    transition: radial-shadow 0.3s ease; /* Плавный переход */
+    border-radius: 50%; /* Круглая форма */
+
+}
+.coin-container span {
+    position: absolute;
+    z-index: 999;
+    font-size: 2rem;
+    color: #ffffff;
+}
+#coin {
+    transition: .1s;
+    transform-style: preserve-3d;
+}
+.menu-container {
+    margin-top: 2.25rem;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.power {
+    display: flex;
+    justify-content: center;
+    margin-right: 0.5rem;
+    width: 33%;
+}
+.power-count {
+    display: flex;
+    flex-direction: column;
+}
+.power-count span {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.gray {
+    color: #d7d7d798!important;
+    font-size: 0.75rem!important;
+}
+.menu-bottuns {
+    width: 95%;
+    padding: 1rem 0.25rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 4rem;
+    background-color: #1C1C1D;
+    border: 2px solid rgba(218, 218, 218, 0.03);
+    border-radius: 50px;
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+
+}
+.select-none-bottuns {
+    font-family: "Open Sans", sans-serif; ;
+    font-size : 10px;
+    font-weight:bold;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0.25rem;
+    width: 33.3333%;
+}
+.button img {
+    margin-top: 0.5rem;
+}
+.button span {
+    margin-top: 0.25rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+.b-r {
+    margin: 0 auto;
+}
+
+.b-r span {
+    color : #FFD700;
+}
+/* Контейнер для прогресса */
+.progress-container {
+    margin-top: 10px;
+    height: 8px;
+}
+
+.progress-bar {
+    height: 8px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.progress-bar .progress {
+    height: 100%;
+    border-radius: 10px;
+    transition: width 0.5s;
+}
+
+.progress-bar .progress.bronze {
+    background-color: #CD7F32;
+}
+
+.progress-bar .progress.silver {
+    background-color: #C0C0C0;
+}
+
+.progress-bar .progress.gold {
+    background-color: #FFD700;
+}
+
+.progress-bar .progress.diamond {
+    background-color: #B9F2FF;
+}
+
+.progress-bar .progress.ruby {
+    background-color: #E0115F;
+}
+
+
+/*.progress-container {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.progress-bar {
+    width: 90%;
+    height: 7px;
+    margin: 1.25rem auto;
+    background-color: white;
+    border-radius: 30px;
+
+}
+.progress {
+    height: 100%;
+    background-color: #4CAF50;
+    border-radius: 10px;
+    width: 0%;
+    transition: width 0.5s;
+}
+
+.progress.bronze {
+    background-color: #cd7f32;
+}
+
+.progress.silver {
+    background-color: #c0c0c0;
+}
+
+.progress.gold {
+    background-color: #ffd700;
+}
+
+.progress.diamond {
+    background-color: #b9f2ff;
+}
+
+.progress.ruby {
+    background-color: #e0115f;
+}*/
+/*.rank-text.bronze {
+    color: #CD7F32;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.rank-progress.bronze {
+    background-color: #CD7F32;
+}
+
+.rank-text.silver {
+    color: #C0C0C0;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.rank-progress.silver {
+    background-color: #C0C0C0;
+}
+
+.rank-text.gold {
+    color: #FFD700;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.rank-progress.gold {
+    background-color: #FFD700;
+}
+
+.rank-text.diamond {
+    color: #B9F2FF;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.rank-progress.diamond {
+    background-color: #B9F2FF;
+}
+
+.rank-text.ruby {
+    color: #E0115F;
+}
+
+.rank-progress.ruby {
+    background-color: #E0115F;
+}
+*/
+
+/* boost page styles */
+.boost {
+    background: linear-gradient(0deg, rgba(241,158,54,1) 2%, rgb(0, 0, 0) 45%);
+    background: linear-gradient(0deg, rgba(157,101,30,1) 5%, rgba(0,0,0,1) 45%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #ffffff;
+    padding-bottom: 4rem;
+}
+.user-balance {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+.balance-title {
+    color: #c1c1c1;
+    margin-bottom: 1.5rem;
+}
+.balance-coins {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+.balance-coins img {
+    margin-right: 0.75rem;
+}
+.balance-guid {
+    color: rgba(185,103,0,1);
+    font-weight: 700;
+}
+.free-boosts {
+    padding: 0 1rem;
+}
+.free-boosts-title {
+    margin-bottom: 0.5rem;
+    padding: 0 0.3rem;
+}
+.free-boosts-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.free-boost-button {
+    cursor: pointer;
+    display: flex;
+    width: 50%;
+    height: 4.5rem;
+    margin: 0.5rem 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    padding: 0 0.75rem;
+    background-color: rgba(218, 218, 218, 0.2);
+    border:2px solid rgba(218, 218, 218, 0.02);
+}
+.free-boosts-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.m-r {
+    margin-right: 0.75rem;
+}
+.m-l {
+    margin-left: 0.75rem;
+}
+.available {
+    margin-top: 0.25rem;
+    color: #919191;
+    font-size: 0.75rem;
+}
+.boosters {
+    margin-top: 3rem;
+    padding: 0 1rem;
+}
+.boosters-title {
+    margin-bottom: 1rem;
+    padding: 0 0.3rem;
+}
+.boosters-buttons {
+    width: 100%;
+    border-radius: 15px;
+    padding: 1.25rem;
+    background-color: rgba(218, 218, 218, 0.2);
+    border: 2px solid rgba(218, 218, 218, 0.02);
+}
+.boosters-button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.boosters-button-detail {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.boosters-button-data {
+    display: flex;
+    align-items: center;
+}
+.boosters-button-image {
+    background-color: rgba(218, 218, 218, 0.1);
+    border: 2px solid rgba(218, 218, 218, 0.01);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4.25rem;
+    height: 4.25rem;
+    padding: 4px;
+    margin-right: 1rem;
+    border-radius: 15px;
+}
+.boosters-button-detail h4 {
+    margin-bottom: 0.25rem;
+    font-weight: 300;
+}
+.boosters-button-detail h4, 
+.boosters-button-data span, 
+.boosters-button-data  p{
+    color: #c1c1c1aa;
+}
+.boosters-button-data h5{
+    font-size: 1rem;
+}
+.m-r-25 {
+    margin-right: 0.25rem;
+}
+.m-b-1 {
+    margin-bottom: 1rem;
+}
+.buy-skins {
+    margin-top: 3rem;
+}
+.slide {
+    width: 17rem!important;
+    margin: 0 1rem;
+    border-radius: 15px;
+    padding: 1.25rem;
+    height: 10rem;
+    background-color: rgba(218, 218, 218, 0.2);
+    border: 2px solid rgba(218, 218, 218, 0.02);
+}
+.skin-button  {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* guid styles */
+.guid {
+    background-image: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 100%);
+}
+.guid-social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+    padding: 0 3rem;
+}
+.guid-social a {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 2.5rem;
+    border-radius: 15px;
+    background-color: rgba(218, 218, 218, 0.2);
+    border: 2px solid rgba(218, 218, 218, 0.02);
+}
+.guid-social a svg {
+    margin-right: 0.25rem;
+}
+.guid-content {
+    margin-top: 4rem;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.guid-title {
+    margin-bottom: 4rem;
+}
+.guid-help-detail {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.5rem;
+}
+.guid-help-detail img {
+    margin-right: 1.75rem;
+}
+.guid-help-detail h3 {
+    margin-bottom: 0.25rem;
+}
+.guid-help-detail p {
+    font-size: 1rem;
+    color: #c1c1c1;
+}
+.guid-button {
+    margin-top: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.guid-button a,
+.frens-invite-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 1.25rem;
+    background: linear-gradient(83deg, rgba(255,184,95,1) 3%, rgba(241,158,54,1) 28%, rgba(255,142,2,1) 91%);
+    width: 20rem;
+    padding: 1rem 0;
+    border-radius: 15px;
+}
+
+/* frens styles */
+.frens {
+    background: linear-gradient(0deg, rgba(241,158,54,1) 2%, rgb(0, 0, 0) 45%);
+    background: linear-gradient(0deg, rgba(157,101,30,1) 5%, rgba(0,0,0,1) 45%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #ffffff;
+    padding-bottom: 4rem;
+}
+.frens-main  {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.frens-count {
+    margin-bottom: 1.25rem;
+    font-size: 2rem;
+    font-weight: bold;
+    
+}
+.frens-total-earn {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    border-radius: 15px;
+    background-color: rgba(218, 218, 218, 0.2);
+    border: 2px solid rgba(218, 218, 218, 0.02);
+    padding: 0.75rem;
+}
+.frens-total-count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(241,158,54,1);
+}
+.frens-total-count img {
+    margin-left: 0.5rem;
+}
+.leaders {
+    color: #c1c1c16e;
+}
+.frens-help, 
+.frens-list {
+    padding: 1rem;
+}
+.frens-help-title, 
+.frens-list-title {
+    padding-left: 0.5rem;
+    color: rgba(241,158,54,1);
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+.frens-list-title {
+    color: #ffffff;
+}
+.frens-help-box,
+.frens-list-box {
+    width: 100%;
+    /* height: 10rem; */
+    margin: 0 auto;
+    border-radius: 15px;
+    background-color: rgba(218, 218, 218, 0.2);
+    border: 2px solid rgba(218, 218, 218, 0.02);
+}
+.frens-invite {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.frens-invite-button {
+    position: fixed;
+    bottom: 10px;
+    width: 23.5rem;
+}
+.frens-help-content {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+.frens-help-image {
+    margin-right: 0.75rem;
+}
+.fren-help-text h5 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+}
+.fren-help-text div{
+    margin-top: 0.25rem;
+    display: flex;
+    align-items: center;
+}
+.fren-help-text div img {
+    margin-right: 0.25rem;
+}
+.fren-help-text div span {
+    margin-right: 0.25rem;
+}
+.frens-open-detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+}
+.frens-open-detail a {
+    color: #ffffff;
+    font-weight: bold;
+}
+.frens-data {
+    padding: 1rem;
+}
+.frens-data,
+.frens-profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.frens-profile-photo {
+    background-color: aquamarine;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 100%;
+    margin-right: 0.75rem;
+}
+.frens-profile-data h4{
+    margin-bottom: 0.25rem;
+}
+.frens-profile-data div{
+    display: flex;
+    align-items: center;
+}
+.frens-profile-data div img,
+.frens-profile-data div span {
+    margin-right: 0.30rem;
+}
+.frens-data-count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 170, 66);
+}
+.frens-data-count span{
+    margin-right: 0.25rem;
+}
+
+/* earn styles */
+.earn {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+
+}
+.card {
+    width: 45%;
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #111;
+    text-align: center;
+    color: white;
+    font-size: 1.2em;
+}
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+/* tasks styles */
+.tasks {
+    font-family: "Open Sans", sans-serif;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    color: white;
+}
+h2 {
+    color: white;
+}
+p {
+    color: white;
+}
+
+.container {
+    padding: 20px;
+}
+.header {
+    background-color: #42a5f5;
+    padding: 10px;
+    border-radius: 30px;
+    text-align: center;
+    width: 80%; /* Устанавливаем ширину на 100% для занятия всей ширины родителя */
+    box-sizing: border-box; /* Включаем учет padding в общей ширине */
+
+}
+.header h1 {
+    margin: 0;
+    font-size: 1em;
+}
+.header p {
+    margin: 10px 0;
+    font-size: 1em;
+}
+.header button {
+    background-color: white;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 1em;
+}
+.section {
+    margin-top: 20px;
+}
+.section h2 {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.task img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+.task p {
+    display: flex;
+    align-items: center;
+    margin: 2px;
+    font-size: 1em;
+}
+.task span {
+    font-weight: bold;
+    color: #fbc02d;
+    font-size: 0.9em;
+}
+/* airdrop styles */
+.airdrop {
+    font-family: "Open Sans", sans-serif;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+.airdrop-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.airdrop-container img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 40px #CD7F32; /*rgba(255, 215, 0, 0.5); /* Свечение */
+    transition: radial-shadow 0.3s ease; /* Плавный переход */
+    border-radius: 50%; /* Круглая форма */
+}
+.airdrop-container h1 {
+    font-size: 2em;
+    margin: 20px 0 10px;
+}
+.airdrop-container p {
+    font-size: 1em;
+    margin: 5px 0;
+    text-align: center;
+}
+
+
+/* login styles */
+.login-page {
+    background: linear-gradient(0deg, rgba(241,158,54,1) 2%, rgb(0, 0, 0) 45%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #ffffff;
+    padding-bottom: 4rem;
+}
+.login-coins,
+.login-page-detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-page-detail  {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #c1c1c1;
+}
+.login-coins-count {
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+.login-form {
+    margin-top: 3rem;
+    padding: 0 2rem;
+}
+.login-form form {
+    padding: 2rem;
+    border-radius: 15px;
+    background-color: rgba(218, 218, 218, 0.2);
+    border: 2px solid rgba(218, 218, 218, 0.02);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-form form label {
+    margin-bottom: 0.25rem;
+}
+.login-form form input {
+    outline: none;
+    background-color: rgba(218, 218, 218, 0.2);
+    border: 2px solid rgba(218, 218, 218, 0.02);
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    color: #ffffff;
+    border-radius: 10px;
+}
+.submit-button {
+    border: none;
+    outline: none;
+    margin-top: 0.75rem;
+    background: linear-gradient(83deg, rgba(255,184,95,1) 3%, rgba(241,158,54,1) 28%, rgba(255,142,2,1) 91%);
+}
+
+/* Kitten Dice */
+.kittendice-container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column; /* или любое другое направление */
+    margin-top: 2rem;
+}
+
+.kittendice-container h1 {
+    margin-bottom: 0.5rem;
+}
+
+.dice-contener {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    flex-direction: column; /* или любое другое направление */
+    margin: 1rem 0;
+
+
+}
+
+.dice-contener img {
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    margin: 0 0.5rem;
+}
+.dice-contener p {
+    display: flex;
+    align-items: center;
+    margin: 2px;
+    font-size: 1em;
+    justify-content: center;
+}
+.dice-contener span {
+    font-weight: bold;
+    color: #fbc02d;
+    font-size: 0.9em;
+    justify-content: center;
+}
+
+/*Kitten Dice People*/
+
+.wallpaper {
+    display: flex;
+    justify-content: center;
+}
+
+.wallpaper img {
+    max-width: 100%;
+    height: auto;
+}
+
+.roll-button {
+    display: flex;
+    padding: 10px 150px;
+    background-color: #1C1C1D;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    flex-direction: column;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto; /* для горизонтального выравнивания */
+    left: 50%; /* для горизонтального выравнивания */
+}
+
+.result {
+    font-size: 2rem;
+    margin-top: 20px;
+    margin: 0 auto; /* для горизонтального выравнивания */
+    left: 50%; /* для горизонтального выравнивания */
+    color : white;
+}
+
+.bet-input {
+    display: flex;
+    background-color: white;
+    padding: 10px 150px;
+    border-radius: 20px;
+    text-align: center;
+    flex-direction: column; /* или любое другое направление */
+    width: 100%; /* Растягивает контейнер на всю ширину */
+    box-sizing: border-box; /* Учитывает padding при расчете ширины */
+    max-width: 100%; /* Ограничивает максимальную ширину на случай большого экрана */
+}
+
+
+input[type=number] {
+    width: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    font-size: 1rem;
+    color: #333;
+    justify-content: center;
+    margin: 0 auto; /* для горизонтального выравнивания */
+    left: 50%; /* для горизонтального выравнивания */
+}
+.dice-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.dice {
+    width: 50px;
+    height: 50px;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Dice-1-b.svg/1200px-Dice-1-b.svg.png');
+    background-size: cover;
+    margin: 0 10px;
+    animation-name: dice-roll;
+    animation-duration: 1s;
+    animation-timing-function: steps(6);
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+
+@keyframes dice-roll {
+    0% {
+        background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Dice-1-b.svg/1200px-Dice-1-b.svg.png');
+    }
+    16.67% {
+        background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Dice-2-b.svg/1200px-Dice-2-b.svg.png');
+    }
+    33.33% {
+        background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Alea_3.png/600px-Alea_3.png');
+    }
+    50% {
+        background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Alea_4.png/600px-Alea_4.png');
+    }
+    66.67% {
+        background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Alea_5.png/600px-Alea_5.png');
+    }
+    83.33% {
+        background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Alea_6.png/600px-Alea_6.png');
+    }
+    100% {
+        background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Dice-1-b.svg/1200px-Dice-1-b.svg.png');
+    }
+}
+
+
+
+
+.rolling {
+    animation: roll 1s infinite;
+}
