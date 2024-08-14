@@ -84,11 +84,11 @@ const h1 = body.querySelector('h1');
 const rankText = body.querySelector('#rank');
 const progress = body.querySelector('.progress');
 
-let coins = parseFloat(localStorage.getItem('coins')) || 0.001;
+let coins = parseFloat(localStorage.getItem('coins'));
 let total = parseInt(localStorage.getItem('total')) || 500;
 let power = parseInt(localStorage.getItem('power')) || 500;
 let rankThresholds = [0.001, 1.001, 5.001, 10.001, 25.001];
-let currentRank = parseInt(localStorage.getItem('rank')) || 0;
+let currentRank = parseInt(localStorage.getItem('rank'))||0 ;
 
 function updateRank() {
     switch (currentRank) {
@@ -126,7 +126,7 @@ function updateRank() {
             rankText.textContent = 'Ruby';
             rankText.className = 'rank-text ruby';
             progress.className = 'progress ruby';
-            image.style.filter = 'drop-shadow(0 0 20px #e0115f)'; // Ruby glow
+            image.style.filter = 'drop-shadow(0 40px #e0115f)'; // Ruby glow
             progress.style.width = '100%';
             return;
     }
@@ -151,7 +151,8 @@ function updateProgress() {
     }
 }
 
-h1.textContent = coins.toLocaleString();
+
+h1.textContent = coins.toFixed(3).toLocaleString();
 body.querySelector('#power').textContent = power;
 
 if (total > 0) {
