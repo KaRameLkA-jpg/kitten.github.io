@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Kitten Dice People</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/kittendicepeople.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
     <meta name="theme-color" content="#0a0a0a" />
@@ -11,14 +12,14 @@
     <link rel="icon" type="image/x-icon" href="./assets/favicon/favicon.ico">
 
 </head>
-<body>
+<body class="kittendicepeople">
 
 <div class="wallpaper">
     <img src="/assets/images/sun.png">
 </div>
 <div class="coin-count-container">
     <img src="/assets/images/coin.png" width="10px">
-    <h1 class="select-none" id="coin">0</h1>
+    <h1 class="select-none" id="coin">1.022</h1>
 </div>
 
 
@@ -27,12 +28,14 @@
 <button id="result" class="roll-button" onclick="rollDice()">Roll the dice!</button>
 
 <div class="dice-container">
-    <img id="yourDice" src="/assets/images/dice.png" class="dice" >
-    <img id="artemDice" src="/assets/images/dice.png" class="dice">
+    <h1 class="name-you">Your Dice</h1>
+    <h1 class="name-artem">Artem Dice</h1>
+    <img id="yourDice" src="/assets/images/dice.png" class="dice1" >
+    <img id="artemDice" src="/assets/images/dice.png" class="dice2">
 </div>
 
 
-<div class="wallpaper">
+<div class="wallpaper2">
     <img src="/assets/images/greentable.png">
 </div>
 

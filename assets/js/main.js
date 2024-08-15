@@ -85,8 +85,8 @@ const rankText = body.querySelector('#rank');
 const progress = body.querySelector('.progress');
 
 let coins = parseFloat(localStorage.getItem('coins'));
-let total = parseInt(localStorage.getItem('total')) || 500;
-let power = parseInt(localStorage.getItem('power')) || 500;
+let total = parseFloat(localStorage.getItem('total')) || 0.001;
+let power = parseFloat(localStorage.getItem('power')) || 0.100;
 let rankThresholds = [0.001, 1.001, 5.001, 10.001, 25.001];
 let currentRank = parseInt(localStorage.getItem('rank'))||0 ;
 
@@ -172,7 +172,7 @@ image.addEventListener('click', (e) => {
 
     if (power > 0) {
         coins += 0.001;
-        power -= 1;
+        power -= 0.001;
         h1.textContent = coins.toFixed(3).toLocaleString();
         body.querySelector('#power').textContent = power;
 

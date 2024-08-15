@@ -12,19 +12,11 @@ a:active {
 html {
     font-family: sans-serif;
 }
-/*.select-none {
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    user-select: none;
-}*/
+.index {
+    background-image: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 100%);
+}
 body {
     background: #1D1C1D;
-    /*background: radial-gradient(circle, rgba(209,213,223,1) 0%, rgba(123,130,149,1) 15%, rgb(0, 0, 0) 75%);
-    /* background: radial-gradient(circle, rgba(253,237,201,1) 0%, rgba(241,158,54,1) 15%, rgba(23,23,23,1) 75%);
-    /* background: radial-gradient(circle, rgba(190,201,233,1) 0%, rgba(95,107,189,1) 15%, rgba(23,23,23,1) 75%); */
-    /* background: radial-gradient(circle, rgba(122,230,243,1) 10%, rgba(31,118,191,1) 25%, rgba(23,23,23,1) 75%); */
-    /* background: radial-gradient(circle, rgba(205,122,243,1) 0%, rgba(154,31,191,1) 15%, rgba(23,23,23,1) 75%); */
-
     background-repeat: no-repeat;
     min-height: 100vh;   
 }
@@ -75,11 +67,6 @@ body {
 }
 .name {
     color: #ffffff;
-}
-.user-rank {
-    font-size: 0.75rem;
-    margin-top: 0.25rem;
-    color: #c1c1c1;
 }
 .coin-count-container {
     width: 100%;
@@ -166,43 +153,48 @@ body {
     transform-style: preserve-3d;
 }
 .menu-container {
-    margin-top: 2.25rem;
+    margin-top: 4.5rem;
     width: 90%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
+
 .power {
     display: flex;
-    justify-content: center;
     margin-right: 0.5rem;
+    margin-left: 1rem;
     width: 33%;
 }
-.power-count {
+
+.boosts {
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    padding: 0 0.25rem;
+    width: 20%;
 }
+
 .power-count span {
     color: #ffffff;
     font-weight: bold;
     font-size: 1.5rem;
 }
+
 .gray {
     color: #d7d7d798!important;
     font-size: 0.75rem!important;
 }
 .menu-bottuns {
-    width: 30%;
-    padding: 1rem 0.25rem;
+    width: 29%;
+    height: 3.6rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 4rem;
     background-color: #1C1C1D;
-    border: 2px solid rgba(218, 218, 218, 0.03);
-    border-radius: 50px;
-    margin-left: 0.4rem;
-    margin-right: 0.4rem;
+    border-radius: 52px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -241,6 +233,8 @@ body {
 /* Контейнер для прогресса */
 .progress-container {
     margin-top: 10px;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
     height: 8px;
 }
 
@@ -276,100 +270,6 @@ body {
 .progress-bar .progress.ruby {
     background-color: #E0115F;
 }
-
-
-/*.progress-container {
-    margin-top: 10px;
-    width: 100%;
-}
-
-.progress-bar {
-    width: 90%;
-    height: 7px;
-    margin: 1.25rem auto;
-    background-color: white;
-    border-radius: 30px;
-
-}
-.progress {
-    height: 100%;
-    background-color: #4CAF50;
-    border-radius: 10px;
-    width: 0%;
-    transition: width 0.5s;
-}
-
-.progress.bronze {
-    background-color: #cd7f32;
-}
-
-.progress.silver {
-    background-color: #c0c0c0;
-}
-
-.progress.gold {
-    background-color: #ffd700;
-}
-
-.progress.diamond {
-    background-color: #b9f2ff;
-}
-
-.progress.ruby {
-    background-color: #e0115f;
-}*/
-/*.rank-text.bronze {
-    color: #CD7F32;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    user-select: none;
-}
-
-.rank-progress.bronze {
-    background-color: #CD7F32;
-}
-
-.rank-text.silver {
-    color: #C0C0C0;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    user-select: none;
-}
-
-.rank-progress.silver {
-    background-color: #C0C0C0;
-}
-
-.rank-text.gold {
-    color: #FFD700;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    user-select: none;
-}
-
-.rank-progress.gold {
-    background-color: #FFD700;
-}
-
-.rank-text.diamond {
-    color: #B9F2FF;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    user-select: none;
-}
-
-.rank-progress.diamond {
-    background-color: #B9F2FF;
-}
-
-.rank-text.ruby {
-    color: #E0115F;
-}
-
-.rank-progress.ruby {
-    background-color: #E0115F;
-}
-*/
 
 /* boost page styles */
 .boost {
@@ -596,7 +496,7 @@ body {
 
 /* frens styles */
 .frens {
-    background: #000000;
+    background-image: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: #ffffff;
@@ -806,10 +706,11 @@ body {
 /* earn styles */
 .earn {
     font-family: Arial, sans-serif;
+    background-image: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 100%);
     margin: 0;
     padding: 0;
 }
-.container {
+.container-earn {
     width: 30%;
     display: flex;
     flex-wrap: wrap;
@@ -843,6 +744,7 @@ body {
     color: white;
     margin: 0;
     padding: 0;
+    background-image: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 100%);
 }
 h1 {
     color: white;
@@ -855,7 +757,15 @@ p {
 }
 
 .container {
+    width: 35%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 230px; /* Расстояние от нижнего края экрана */
 }
 .header {
     background-color: #42a5f5;
@@ -878,12 +788,13 @@ p {
     background-color: white;
     border: none;
     padding: 10px 10px;
-    border-radius: 100px;
+    border-radius: 20px;
     cursor: pointer;
     font-size: 1em;
 }
 .section {
     margin-top: 20px;
+    width: 80%;
 }
 .section h2 {
     font-size: 1em;
@@ -895,7 +806,7 @@ p {
     align-items: center;
     background-color: #333;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 20px;
     margin-bottom: 10px;
 }
 .task img {
@@ -916,14 +827,10 @@ p {
 }
 /* airdrop styles */
 .airdrop {
-    font-family: "Open Sans", sans-serif;
-    background-color: black;
+    background-image: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 100%);
     color: white;
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
     height: 100vh;
     text-align: center;
 }
@@ -1057,113 +964,5 @@ p {
     justify-content: center;
 }
 
-/*Kitten Dice People*/
-
-.wallpaper {
-    display: flex;
-    justify-content: center;
-}
-
-.wallpaper img {
-    max-width: 100%;
-    height: auto;
-}
-
-.roll-button {
-    display: flex;
-    padding: 10px 150px;
-    background-color: #1C1C1D;
-    border: none;
-    border-radius: 20px;
-    text-align: center;
-    flex-direction: column;
-    color: white;
-    font-size: 1.2rem;
-    cursor: pointer;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto; /* для горизонтального выравнивания */
-    left: 50%; /* для горизонтального выравнивания */
-}
-
-.result {
-    font-size: 2rem;
-    margin-top: 20px;
-    margin: 0 auto; /* для горизонтального выравнивания */
-    left: 50%; /* для горизонтального выравнивания */
-    color : white;
-}
-
-.bet-input {
-    display: flex;
-    background-color: white;
-    padding: 10px 150px;
-    border-radius: 20px;
-    text-align: center;
-    flex-direction: column; /* или любое другое направление */
-    width: 100%; /* Растягивает контейнер на всю ширину */
-    box-sizing: border-box; /* Учитывает padding при расчете ширины */
-    max-width: 100%; /* Ограничивает максимальную ширину на случай большого экрана */
-}
 
 
-input[type=number] {
-    width: 100px;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #444;
-    font-size: 1rem;
-    color: #333;
-    justify-content: center;
-    margin: 0 auto; /* для горизонтального выравнивания */
-    left: 50%; /* для горизонтального выравнивания */
-}
-.dice-container {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-
-.dice {
-    width: 50px;
-    height: 50px;
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Dice-1-b.svg/1200px-Dice-1-b.svg.png');
-    background-size: cover;
-    margin: 0 10px;
-    animation-name: dice-roll;
-    animation-duration: 1s;
-    animation-timing-function: steps(6);
-    animation-iteration-count: infinite;
-    animation-play-state: paused;
-}
-
-@keyframes dice-roll {
-    0% {
-        background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Dice-1-b.svg/1200px-Dice-1-b.svg.png');
-    }
-    16.67% {
-        background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Dice-2-b.svg/1200px-Dice-2-b.svg.png');
-    }
-    33.33% {
-        background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Alea_3.png/600px-Alea_3.png');
-    }
-    50% {
-        background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Alea_4.png/600px-Alea_4.png');
-    }
-    66.67% {
-        background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Alea_5.png/600px-Alea_5.png');
-    }
-    83.33% {
-        background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Alea_6.png/600px-Alea_6.png');
-    }
-    100% {
-        background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Dice-1-b.svg/1200px-Dice-1-b.svg.png');
-    }
-}
-
-
-
-
-.rolling {
-    animation: roll 1s infinite;
-}
