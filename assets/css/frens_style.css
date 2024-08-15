@@ -43,6 +43,14 @@
 .bold {
     font-weight: bold;
 }
+.invite-bold {
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    margin: 10px;
+    font-size: 1em;
+    justify-content: center;
+}
 .normal {
     font-weight: normal;
 }
@@ -257,8 +265,4 @@
 
 .b-r span {
     color : #FFD700;
-}
-.background-image {
-    position: absolute;
-    bottom: 0;
 }
