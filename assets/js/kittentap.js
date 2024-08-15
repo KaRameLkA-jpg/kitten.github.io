@@ -10,16 +10,16 @@ const diceGifs = [
 
 // Пути к статическим изображениям выпавших кубиков
 const diceImages = [
-    "/assets/images/dice.png",
-    "/assets/images/dice.png",
-    "/assets/images/dice.png",
-    "/assets/images/dice.png",
-    "/assets/images/dice.png",
-    "/assets/images/dice.png"
+    "/assets/images/dice_1.tiff",
+    "/assets/images/dice_2.tiff",
+    "/assets/images/dice_3.tiff",
+    "/assets/images/dice_4.tiff",
+    "/assets/images/dice_5.tiff",
+    "/assets/images/dice_6.tiff"
 ];
 
-// Предполагаемая продолжительность GIF в миллисекундах (например, 2 секунды)
-const gifDuration = 2000;
+// Предполагаемая продолжительность GIF в миллисекундах
+const gifDuration = 2700;
 
 function rollDice() {
     // Получаем текущее значение ставки и баланса
@@ -73,8 +73,8 @@ function rollDice() {
         resultButton.textContent = resultText;
         resultButton.style.backgroundColor = resultColor;
 
-        // Обновление баланса
-        document.getElementById("coin").textContent = coinCount.toLocaleString();
+        // Обновление баланса с сохранением точности до двух знаков после запятой
+        document.getElementById("coin").textContent = coinCount.toFixed(3);
 
         // Включаем кнопку и восстанавливаем её исходный вид
         setTimeout(() => {
@@ -84,4 +84,5 @@ function rollDice() {
         }, 2000); // 2 секунды для демонстрации результата
     }, gifDuration); // Задержка на время проигрывания GIF
 }
+
 
