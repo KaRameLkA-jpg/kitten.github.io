@@ -1,0 +1,264 @@
+/* frens styles */
+.frens {
+    background-image: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-size: 16px;
+    padding-bottom: 4rem;
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+}
+.frens-main  {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.frens-count {
+    margin-bottom: 8px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.frens-inscription {
+    margin-bottom: 5rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.frens-total-earn {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: 393px;
+    border-radius: 30px;
+    background-color: #1C1C1D;
+    border: 2px solid rgba(218, 218, 218, 0.02);
+    padding: 0.50rem;
+}
+.frens-small-invite {
+    font-size: 0.8rem;
+    font-weight: bold;
+    line-height: 150%;
+}
+.bold {
+    font-weight: bold;
+}
+.normal {
+    font-weight: normal;
+}
+.blue {
+    color: #24a1de;
+}
+.frens-total-count {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+.frens-total-count span {
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+.frens-yellow {
+    color: rgba(255,215,0,1);
+}
+.frens-total-count img {
+    margin-left: 0.5rem;
+}
+.leaders {
+    color: #c1c1c16e;
+}
+.frens-help,
+.frens-list {
+    margin-left: 10px;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+.frens-help-title,
+.frens-list-title {
+    padding-left: 0.5rem;
+    color: rgba(255,255,255,1);
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+}
+.frens-help-box,
+.frens-list-box {
+    cursor: pointer;
+    width: 410px;
+    height: 55px;
+    font-size: 15px;
+    font-weight: bold;
+    /* height: 10rem; */
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    margin-bottom: 12px;
+    border-radius: 30px;
+    background-color: #1C1C1D;;
+}
+.frens-invite {
+    display: flex;
+    position: absolute;
+    bottom: 80px;
+    z-index: 999;
+    gap: 1rem;
+    width: 367px;
+    font-size: 1rem;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+.frens-invite-button {
+    background-color: #24A1DE;
+    text-decoration: none;
+    border: none;
+    height: 43px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    margin-left: 30px;
+}
+.frens-invite-button span {
+    color: white;
+}
+.frens-other-button {
+    background-color: #24A1DE;
+    color: white;
+    border: none;
+    margin-left: 10px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.frens-other-button {
+    padding: 0; /* Убираем внутренние отступы для второй кнопки */
+    position: relative; /* Делаем родительским элементом для квадрата */
+}
+
+.square-button {
+    width: 60px; /* Задаём размер квадрата */
+    height: 60px;
+    background-color: #24A1DE;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    border-radius: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.frens-help-content {
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+.frens-help-image {
+    margin-right: 0.50rem;
+}
+.fren-help-text {
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+}
+.fren-help-text div{
+    margin-top: 0.25rem;
+    display: flex;
+    align-items: center;
+}
+.fren-help-text div img {
+    margin-right: 0.25rem;
+}
+.fren-help-text div span {
+    margin-right: 0.25rem;
+}
+.frens-open-detail a {
+    color: #ffffff;
+    font-weight: bold;
+}
+.frens-data {
+    padding: 1rem;
+}
+.frens-data,
+.frens-profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.frens-profile-photo {
+    background-color: #1C1C1D;
+    margin-right: 0;
+}
+.frens-profile-data h4{
+    margin-bottom: 0.25rem;
+    font-size: 0.8rem;
+}
+.frens-profile-data div{
+    display: flex;
+    align-items: center;
+}
+.frens-profile-data div img,
+.frens-profile-data div span {
+    margin-right: 0.30rem;
+}
+.frens-data-count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 215, 0);
+}
+.frens-data-count span{
+    margin-right: 0.25rem;
+}
+.menu-bottuns {
+    width: 29.75%;
+    height: 3.6rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1C1C1D;
+    border-radius: 52px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 23px; /* Расстояние от нижнего края экрана */
+    z-index: 999;
+}
+.select-none-bottuns {
+    font-family: "Open Sans", sans-serif; ;
+    font-size : 10px;
+    font-weight: bold;
+}
+.button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0.25rem;
+    width: 33.3333%;
+    text-decoration: none;
+}
+.button img {
+    margin-top: 0.5rem;
+}
+.button span {
+    margin-top: 0.25rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+.b-r {
+    margin: 0 auto;
+}
+
+.b-r span {
+    color : #FFD700;
+}
+.background-image {
+    position: absolute;
+    bottom: 0;
+}
