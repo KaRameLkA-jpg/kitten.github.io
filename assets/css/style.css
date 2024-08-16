@@ -481,8 +481,7 @@ body {
     justify-content: center;
     align-items: center;
 }
-.guid-button a,
-.frens-invite-button {
+.guid-button a {
     display: flex;
     justify-content: center;
     align-items: center;
