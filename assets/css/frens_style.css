@@ -9,7 +9,6 @@
     font-family: "Open Sans", sans-serif;
 }
 .frens-main  {
-    margin: 2rem 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,8 +31,8 @@
     width: 393px;
     border-radius: 30px;
     background-color: #1C1C1D;
-    border: 2px solid rgba(218, 218, 218, 0.02);
     padding: 0.50rem;
+    margin-bottom: 10px;
 }
 .frens-small-invite {
     font-size: 0.8rem;
@@ -72,9 +71,6 @@
 .frens-total-count img {
     margin-left: 0.5rem;
 }
-.leaders {
-    color: #c1c1c16e;
-}
 .frens-help,
 .frens-list {
     margin-left: 10px;
@@ -88,20 +84,31 @@
     font-weight: bold;
     margin-bottom: 0.75rem;
 }
-.frens-help-box,
-.frens-list-box {
+.frens-help-box {
     cursor: pointer;
     width: 410px;
     height: 55px;
     font-size: 15px;
     font-weight: bold;
-    /* height: 10rem; */
     justify-content: center;
     align-items: center;
     vertical-align: middle;
     margin-bottom: 12px;
     border-radius: 30px;
     background-color: #1C1C1D;;
+}
+.frens-list-box {
+    cursor: pointer;
+    width: 410px;
+    height: 55px;
+    font-size: 15px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    margin-bottom: 12px;
+    border-radius: 30px;
+    background-color: #1C1C1D;
 }
 .frens-invite {
     display: flex;
@@ -174,11 +181,6 @@
     font-weight: 500;
     margin-bottom: 0.25rem;
 }
-.fren-help-text div{
-    margin-top: 0.25rem;
-    display: flex;
-    align-items: center;
-}
 .fren-help-text div img {
     margin-right: 0.25rem;
 }
@@ -197,10 +199,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 6px;
 }
 .frens-profile-photo {
     background-color: #1C1C1D;
-    margin-right: 0;
+    margin-right: 5px;
 }
 .frens-profile-data h4{
     margin-bottom: 0.25rem;
