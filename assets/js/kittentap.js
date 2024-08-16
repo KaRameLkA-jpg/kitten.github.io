@@ -1,21 +1,21 @@
 // Пути к изображениям GIF для кубиков
 const diceGifs = [
-    "/assets/images/dice_1.gif",
-    "/assets/images/dice_2.gif",
-    "/assets/images/dice_3.gif",
-    "/assets/images/dice_4.gif",
-    "/assets/images/dice_5.gif",
-    "/assets/images/dice_6.gif"
+    "./assets/images/dice_1.gif",
+    "./assets/images/dice_2.gif",
+    "./assets/images/dice_3.gif",
+    "./assets/images/dice_4.gif",
+    "./assets/images/dice_5.gif",
+    "./assets/images/dice_6.gif"
 ];
 
 // Пути к статическим изображениям выпавших кубиков
 const diceImages = [
-    "/assets/images/dice_1.tiff",
-    "/assets/images/dice_2.tiff",
-    "/assets/images/dice_3.tiff",
-    "/assets/images/dice_4.tiff",
-    "/assets/images/dice_5.tiff",
-    "/assets/images/dice_6.tiff"
+    "./assets/images/dice_1.tiff",
+    "./assets/images/dice_2.tiff",
+    "./assets/images/dice_3.tiff",
+    "./assets/images/dice_4.tiff",
+    "./assets/images/dice_5.tiff",
+    "./assets/images/dice_6.tiff"
 ];
 
 // Предполагаемая продолжительность GIF в миллисекундах

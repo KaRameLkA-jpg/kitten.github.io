@@ -79,12 +79,12 @@ setInterval(() => {
  */
 
 const body = document.body;
-const image = body.querySelector('#coin');
-const h1 = body.querySelector('h1');
+const image = body.querySelector('#clicks');
+const h1 = body.querySelector('#coin');
 const rankText = body.querySelector('#rank');
 const progress = body.querySelector('.progress');
 
-let coins = parseFloat(localStorage.getItem('coins'));
+let coins = parseFloat(localStorage.getItem('coin')) || 0.001;
 let total = parseFloat(localStorage.getItem('total')) || 0.001;
 let power = parseFloat(localStorage.getItem('power')) || 0.100;
 let rankThresholds = [0.001, 1.001, 5.001, 10.001, 25.001];
@@ -164,19 +164,22 @@ if (total > 0) {
 
 updateRank();
 
-image.addEventListener('click', (e) => {
-    let x = e.offsetX;
-    let y = e.offsetY;
+image.addEventListener('click',  Clicker);
+
+function Clicker(event) {
+    const x = event.offsetX;
+    const y = event.offsetY;
+
 
     navigator.vibrate(5);
 
-    if (power > 0) {
+    if (power > 0.000) {
         coins += 0.001;
         power -= 0.001;
-        h1.textContent = coins.toFixed(3).toLocaleString();
+        h1.textContent = parseFloat(coins.toFixed(3).toLocaleString());
         body.querySelector('#power').textContent = power;
 
-        localStorage.setItem('coins', coins.toFixed(3));
+        localStorage.setItem('coin', coins.toFixed(3));
         localStorage.setItem('power', power);
 
         updateProgress();
@@ -195,7 +198,7 @@ image.addEventListener('click', (e) => {
     setTimeout(() => {
         image.style.transform = 'translate(0px, 0px)';
     }, 100);
-});
+}
 
 
 
