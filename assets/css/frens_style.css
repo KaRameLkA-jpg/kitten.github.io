@@ -25,7 +25,6 @@
     font-weight: bold;
 }
 .frens-total-earn {
-    cursor: pointer;
     display: flex;
     align-items: center;
     width: 393px;
@@ -85,7 +84,6 @@
     margin-bottom: 0.75rem;
 }
 .frens-help-box {
-    cursor: pointer;
     width: 410px;
     height: 55px;
     font-size: 15px;
@@ -98,7 +96,6 @@
     background-color: #1C1C1D;;
 }
 .frens-list-box {
-    cursor: pointer;
     width: 410px;
     height: 55px;
     font-size: 15px;
@@ -113,7 +110,7 @@
 .frens-invite {
     display: flex;
     position: absolute;
-    bottom: 80px;
+    bottom: 105px;
     z-index: 999;
     gap: 1rem;
     width: 367px;
@@ -126,7 +123,7 @@
     background-color: #24A1DE;
     text-decoration: none;
     border: none;
-    height: 43px;
+    height: 60px;
     border-radius: 10px;
     padding: 10px 20px;
     cursor: pointer;
@@ -225,47 +222,4 @@
 }
 .frens-data-count span{
     margin-right: 0.25rem;
-}
-.menu-bottuns {
-    width: 29.75%;
-    height: 3.6rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #1C1C1D;
-    border-radius: 52px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 23px; /* Расстояние от нижнего края экрана */
-    z-index: 999;
-}
-.select-none-bottuns {
-    font-family: "Open Sans", sans-serif; ;
-    font-size : 10px;
-    font-weight: bold;
-}
-.button {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0 0.25rem;
-    width: 33.3333%;
-    text-decoration: none;
-}
-.button img {
-    margin-top: 0.5rem;
-}
-.button span {
-    margin-top: 0.25rem;
-    font-weight: bold;
-    color: #ffffff;
-}
-.b-r {
-    margin: 0 auto;
-}
-
-.b-r span {
-    color : #FFD700;
 }
