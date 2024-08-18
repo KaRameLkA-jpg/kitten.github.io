@@ -9,7 +9,7 @@ function updateLoadingProgress() {
     loadingProgress1 += 2;
     loadingProgress.style.width = `${loadingProgress1}%`;
 
-    if (loadingProgress1 >= 100) {
+    if (loadingProgress1 >= 150) {
         clearInterval(loadingInterval);
         hideLoadingScreen();
         loadMainPage();
@@ -20,12 +20,14 @@ function hideLoadingScreen() {
     loadingScreen.style.opacity = '0';
     setTimeout(() => {
         loadingScreen.style.display = 'none';
-    }, 3000);
+    }, 1500);
 }
 
 function loadMainPage() {
     // Загрузка и переход к index.html
-    window.location.href = './index.html';
+    setTimeout(() => {
+        window.location.href = './index.html';
+    }, 1000);
 }
 
 // Запуск загрузочного экрана
