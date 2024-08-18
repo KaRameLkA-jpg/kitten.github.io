@@ -164,7 +164,7 @@ if (total > 0) {
 
 updateRank();
 
-image.addEventListener('click',  Clicker);
+/*image.addEventListener('click',  Clicker);
 
 function Clicker(event) {
     const x = event.offsetX;
@@ -198,7 +198,7 @@ function Clicker(event) {
     setTimeout(() => {
         image.style.transform = 'translate(0px, 0px)';
     }, 100);
-}
+}*/
 
 
 
