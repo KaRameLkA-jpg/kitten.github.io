@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;!important;
+}
+a {
+    text-decoration: none;
+}
+a:active {
+    color: rgba(241,158,54,1);
+}
+html {
+    font-family: sans-serif;
+}
+.kitten-dice {
+    background-image: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-size: 16px;
+    padding-bottom: 4rem;
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+}
+.kittendice-container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column; /* или любое другое направление */
+    margin-top: 2rem;
+    justify-content: center;
+    min-height: 20vh;
+
+}
+
+.kittendice-container h1 {
+    margin-bottom: 0.5rem;
+}
+
+.dice-contener {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    border-radius: 40px;
+    text-align: center;
+    flex-direction: column;
+    margin: 1rem auto;
+    padding: 15px;
+    width: 90%;
+}
+
+
+.dice-contener img {
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    margin: 0 0.5rem;
+}
+.dice-contener p {
+    display: flex;
+    align-items: center;
+    margin: 2px;
+    font-size: 1em;
+    justify-content: center;
+}
+.dice-contener span {
+    font-weight: bold;
+    color: #fbc02d;
+    font-size: 0.9em;
+    justify-content: center;
+}
+h1 {
+    color: white;
+}
+h2 {
+    color: white;
+}
+p {
+    color: white;
+}

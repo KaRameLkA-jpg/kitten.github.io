@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box;!important;
 }
 a {
     text-decoration: none;
@@ -11,12 +11,6 @@ a:active {
 }
 html {
     font-family: sans-serif;
-}
-.index {
-    background-image: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 100%);
-    font-family: "Open Sans", sans-serif; ;
-    font-size : 20px;
-    font-weight:bold;
 }
 .haeder {
     display: flex;
@@ -179,7 +173,6 @@ html {
 }
 
 .select-none-bottuns {
-    font-family: "Open Sans", sans-serif; ;
     font-size : 10px;
     font-weight:bold;
 }
@@ -471,12 +464,6 @@ html {
 }
 
 /* earn styles */
-.earn {
-    font-family: Arial, sans-serif;
-    background-image: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 100%);
-    margin: 0;
-    padding: 0;
-}
 .container-earn {
     width: 30%;
     display: flex;

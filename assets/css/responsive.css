@@ -4,15 +4,21 @@
     .guid,
     .frens,
     .earn,
+    .index,
+    .tasks,
     .login-page {
         max-width: 450px;
         margin: 0 auto;
-        background-color: #191919!important;
+        background-color: #111111;
         background-size: 450px;
         background-position: center;
     }
     .squad-container {
-        margin: 0.5rem auto;
+        margin: 1.75rem auto;
+        width: 80%;
+        display: flex;
+        align-items: center;
+        height: 4.5rem;
     }
     .slide  {
         width: 19.5rem!important;
