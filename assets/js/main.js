@@ -96,31 +96,31 @@ function updateRank() {
             rankText.textContent = 'Bronze';
             rankText.className = 'rank-text bronze';
             progress.className = 'progress bronze';
-            image.style.filter = 'drop-shadow(0 0 20px #cd7f32)'; // Bronze glow
+            image.style.filter = 'drop-shadow(0 0 30px #cd7f32)'; // Bronze glow
             break;
         case 1:
             rankText.textContent = 'Silver';
             rankText.className = 'rank-text silver';
             progress.className = 'progress silver';
-            image.style.filter = 'drop-shadow(0 0 20px #c0c0c0)'; // Silver glow
+            image.style.filter = 'drop-shadow(0 0 30px #c0c0c0)'; // Silver glow
             break;
         case 2:
             rankText.textContent = 'Gold';
             rankText.className = 'rank-text gold';
             progress.className = 'progress gold';
-            image.style.filter = 'drop-shadow(0 0 20px #ffd700)'; // Gold glow
+            image.style.filter = 'drop-shadow(0 0 30px #ffd700)'; // Gold glow
             break;
         case 3:
             rankText.textContent = 'Diamond';
             rankText.className = 'rank-text diamond';
             progress.className = 'progress diamond';
-            image.style.filter = 'drop-shadow(0 0 20px #b9f2ff)'; // Diamond glow
+            image.style.filter = 'drop-shadow(0 0 30px #b9f2ff)'; // Diamond glow
             break;
         case 4:
             rankText.textContent = 'Ruby';
             rankText.className = 'rank-text ruby';
             progress.className = 'progress ruby';
-            image.style.filter = 'drop-shadow(0 0 20px #e0115f)'; // Ruby glow
+            image.style.filter = 'drop-shadow(0 0 30px #e0115f)'; // Ruby glow
             break;
         default:
             rankText.textContent = 'Ruby';
