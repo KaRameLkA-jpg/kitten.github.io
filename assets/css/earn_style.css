@@ -34,14 +34,15 @@ html {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
+    justify-content: center; 
+    align-items: center;
+    padding: 10px;
 
 
 }
 .card {
-    width: 45%;
-    margin: 10px;
+    width: 48%;
+    margin: 1%;
     border-radius: 10px;
     overflow: hidden;
     background-color: #111;

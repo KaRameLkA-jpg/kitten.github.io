@@ -24,7 +24,8 @@
 
 .wallpaper img {
     max-width: 100%;
-    height: auto;
+    width: auto;
+    height: 200px;
 }
 .wallpaper2 {
     display: flex;

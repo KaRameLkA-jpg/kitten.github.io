@@ -10,7 +10,8 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 10px; /* Расстояние от нижнего края экрана */
+    bottom: 15px; /* Расстояние от нижнего края экрана */
+    max-width: 400px;
 }
 .select-none-bottuns {
     font-size : 10px;
