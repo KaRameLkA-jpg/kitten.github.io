@@ -8,6 +8,7 @@
     .tasks,
     .login-page {
         max-width: 400px;!important;
+        max-height: 800px;!important;
         margin: auto auto;
         background-color: #111111;
         background-size: 450px;
