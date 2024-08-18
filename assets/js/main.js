@@ -158,9 +158,9 @@ function updateProgress() {
 image.addEventListener('click', (event) => {
     // Добавляем монеты
     coins += 0.001;
-    total -= 0.001;
+    power -= 0.001;
     localStorage.setItem('coin', coins);
-    localStorage.setItem('total', total);
+    localStorage.setItem('power', total);
 
     // Обновляем отображение монет
     h1.textContent = coins.toFixed(3).toLocaleString();
@@ -168,10 +168,8 @@ image.addEventListener('click', (event) => {
     // Обновляем прогресс
     updateProgress();
 
-    // Вибрация устройства (если поддерживается)
-    if (navigator.vibrate) {
-        navigator.vibrate(100); // Вибрация на 100мс
-    }
+    navigator.vibrate(5);
+
 
     // Визуальный эффект "+0.001"
     const plusText = document.createElement('span');
@@ -200,10 +198,10 @@ image.addEventListener('click', (event) => {
 
 // Функция для обновления энергии каждую секунду
 function regenerateEnergy() {
-    if (total < maxEnergy) {
-        total = Math.min(maxEnergy, total + 0.001); // Увеличиваем энергию, но не превышаем максимум
-        localStorage.setItem('total', total); // Сохраняем энергию в локальном хранилище
-        console.log(`Total: ${total.toFixed(3)}`);
+    if (power < maxEnergy) {
+        power = Math.min(maxEnergy, power + 0.001); // Увеличиваем энергию, но не превышаем максимум
+        localStorage.setItem('power', power); // Сохраняем энергию в локальном хранилище
+        console.log(`Power: ${power.toFixed(3)}`);
         // Здесь можно добавить отображение энергии в UI, если это нужно
     }
 }
