@@ -85,9 +85,10 @@ const progress = body.querySelector('.progress');
 const image = body.querySelector('#clicks'); // Получаем элемент изображения для эффектов
 
 let coins = parseFloat(localStorage.getItem('coin')) || 0.001;
-let total = parseFloat(localStorage.getItem('total')) || 0.001;
+let total = parseFloat(localStorage.getItem('total')) || 0.100;
 let power = parseFloat(localStorage.getItem('power')) || 0.100;
-let rankThresholds = [0.001, 1.001, 5.001, 10.001, 25.001];
+const maxEnergy = 1.000; // Максимальное значение энергии
+let rankThresholds = [0.001, 0.110, 5.001, 10.001, 25.001];
 let currentRank = parseInt(localStorage.getItem('rank')) || 0;
 
 // Функция обновления ранга
@@ -124,10 +125,10 @@ function updateRank() {
             image.style.filter = 'drop-shadow(0 0 30px #e0115f)'; // Ruby glow
             break;
         default:
-            rankText.textContent = 'Ruby';
-            rankText.className = 'rank-text ruby';
-            progress.className = 'progress ruby';
-            image.style.filter = 'drop-shadow(0 40px #e0115f)'; // Ruby glow
+            rankText.textContent = 'Bronze';
+            rankText.className = 'rank-text bronze';
+            progress.className = 'progress bronze';
+            image.style.filter = 'drop-shadow(0 0 30px #cd7f32)';
             progress.style.width = '100%';
             return;
     }
@@ -157,7 +158,7 @@ function updateProgress() {
 image.addEventListener('click', (event) => {
     // Добавляем монеты
     coins += 0.001;
-    total += 0.001;
+    total -= 0.001;
     localStorage.setItem('coin', coins);
     localStorage.setItem('total', total);
 
@@ -178,8 +179,8 @@ image.addEventListener('click', (event) => {
     plusText.style.position = 'absolute';
     plusText.style.left = `${event.clientX}px`;
     plusText.style.top = `${event.clientY}px`;
-    plusText.style.color = '#FFD700'; // Цвет золотой
-    plusText.style.fontSize = '20px';
+    plusText.style.color = 'silver'; // Цвет золотой
+    plusText.style.fontSize = '25px';
     plusText.style.fontWeight = 'bold';
     plusText.style.pointerEvents = 'none';
     plusText.style.transition = 'transform 1s ease-out, opacity 1s ease-out';
@@ -197,10 +198,23 @@ image.addEventListener('click', (event) => {
     }, 1000);
 });
 
+// Функция для обновления энергии каждую секунду
+function regenerateEnergy() {
+    if (total < maxEnergy) {
+        total = Math.min(maxEnergy, total + 0.001); // Увеличиваем энергию, но не превышаем максимум
+        localStorage.setItem('total', total); // Сохраняем энергию в локальном хранилище
+        console.log(`Total: ${total.toFixed(3)}`);
+        // Здесь можно добавить отображение энергии в UI, если это нужно
+    }
+}
+
+// Запуск таймера для восстановления энергии каждую секунду
+setInterval(regenerateEnergy, 1000);
+
 h1.textContent = coins.toFixed(3).toLocaleString();
 body.querySelector('#power').textContent = power;
 
-if (total > 0) {
+if (total > 0.001) {
     body.querySelector('.progress-container').style.display = 'block';
     updateProgress();
 } else {
@@ -208,6 +222,7 @@ if (total > 0) {
 }
 
 updateRank();
+
 
 
 /*image.addEventListener('click',  Clicker);
