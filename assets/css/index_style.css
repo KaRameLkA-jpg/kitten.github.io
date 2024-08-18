@@ -154,7 +154,7 @@ html {
     align-items: center;
 }
 .coin-container img {
-    box-shadow: 0 0 50px ; /* Свечение */
+    box-shadow: 0 0 50px black; /* Свечение */
     transition: radial-shadow 0.3s ease; /* Плавный переход */
     border-radius: 50%; /* Круглая форма */
 }
@@ -171,7 +171,7 @@ html {
 
 /*Контенер энергии и буста*/
 .menu-container {
-    margin-top: 7rem;
+    margin-top: 6.5rem;
     width: 100%;
     display: flex;
     justify-content: space-between;

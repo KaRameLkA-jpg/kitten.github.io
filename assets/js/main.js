@@ -79,17 +79,18 @@ setInterval(() => {
  */
 
 const body = document.body;
-const image = body.querySelector('#clicks');
 const h1 = body.querySelector('#coin');
 const rankText = body.querySelector('#rank');
 const progress = body.querySelector('.progress');
+const image = body.querySelector('#clicks'); // Получаем элемент изображения для эффектов
 
 let coins = parseFloat(localStorage.getItem('coin')) || 0.001;
 let total = parseFloat(localStorage.getItem('total')) || 0.001;
 let power = parseFloat(localStorage.getItem('power')) || 0.100;
 let rankThresholds = [0.001, 1.001, 5.001, 10.001, 25.001];
-let currentRank = parseInt(localStorage.getItem('rank'))||0 ;
+let currentRank = parseInt(localStorage.getItem('rank')) || 0;
 
+// Функция обновления ранга
 function updateRank() {
     switch (currentRank) {
         case 0:
@@ -132,6 +133,7 @@ function updateRank() {
     }
 }
 
+// Функция обновления прогресса
 function updateProgress() {
     if (currentRank < rankThresholds.length - 1) {
         const nextThreshold = rankThresholds[currentRank + 1];
@@ -151,6 +153,49 @@ function updateProgress() {
     }
 }
 
+// Функция обработки клика на картинку
+image.addEventListener('click', (event) => {
+    // Добавляем монеты
+    coins += 0.001;
+    total += 0.001;
+    localStorage.setItem('coin', coins);
+    localStorage.setItem('total', total);
+
+    // Обновляем отображение монет
+    h1.textContent = coins.toFixed(3).toLocaleString();
+
+    // Обновляем прогресс
+    updateProgress();
+
+    // Вибрация устройства (если поддерживается)
+    if (navigator.vibrate) {
+        navigator.vibrate(100); // Вибрация на 100мс
+    }
+
+    // Визуальный эффект "+0.001"
+    const plusText = document.createElement('span');
+    plusText.textContent = "+0.001";
+    plusText.style.position = 'absolute';
+    plusText.style.left = `${event.clientX}px`;
+    plusText.style.top = `${event.clientY}px`;
+    plusText.style.color = '#FFD700'; // Цвет золотой
+    plusText.style.fontSize = '20px';
+    plusText.style.fontWeight = 'bold';
+    plusText.style.pointerEvents = 'none';
+    plusText.style.transition = 'transform 1s ease-out, opacity 1s ease-out';
+    body.appendChild(plusText);
+
+    // Анимация движения вверх и исчезновения
+    setTimeout(() => {
+        plusText.style.transform = 'translateY(-50px)';
+        plusText.style.opacity = '0';
+    }, 10);
+
+    // Удаление элемента после завершения анимации
+    setTimeout(() => {
+        body.removeChild(plusText);
+    }, 1000);
+});
 
 h1.textContent = coins.toFixed(3).toLocaleString();
 body.querySelector('#power').textContent = power;
@@ -163,6 +208,7 @@ if (total > 0) {
 }
 
 updateRank();
+
 
 /*image.addEventListener('click',  Clicker);
 

@@ -17,9 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
         updateProgress();
 
         // Вибрация (если поддерживается)
-        if (navigator.vibrate) {
-            navigator.vibrate(100); // Вибрация на 100 мс
-        }
+        navigator.vibrate(5);
 
         // Добавляем эффект с "+0.001"
         createClickEffect(event.clientX, event.clientY);
