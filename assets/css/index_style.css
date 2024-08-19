@@ -38,7 +38,7 @@ html {
     font-weight: bold;
     font-size: 1.3rem;
 }
-.name {
+.username {
     color: #ffffff;
 }
 
@@ -171,7 +171,7 @@ html {
 
 /*Контенер энергии и буста*/
 .menu-container {
-    margin-top: 6.5rem;
+    margin-top: 6rem;
     width: 100%;
     display: flex;
     justify-content: space-between;
