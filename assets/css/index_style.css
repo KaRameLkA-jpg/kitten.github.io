@@ -199,3 +199,23 @@ html {
     width: 30%;
 }
 
+.effect {
+    position: absolute;
+    font-size: 30px;
+    font-family: "Open Sans", sans-serif;
+    color: silver;
+    animation: moveUp 1s ease-out forwards;
+    pointer-events: none;
+}
+
+@keyframes moveUp {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+}
+

@@ -1,0 +1,66 @@
+body {
+    background-image: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-size: 16px;
+    padding-bottom: 4rem;
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    max-width: 400px;
+    max-height: 800px;
+    touch-action: none; /* Запрещает масштабирование на сенсорных устройствах */
+    -ms-touch-action: none; /* Для поддержки Internet Explorer */
+    -webkit-user-select: none; /* Запрещает выделение текста на сенсорных устройствах */
+    -webkit-user-drag: none; /* Запрещает перетаскивание элементов на сенсорных устройствах */
+    -webkit-tap-highlight-color: transparent; /* Убирает подсветку ссылок на сенсорных устройствах */
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.booster {
+    display: flex;
+    align-items: center;
+    background-color: #1a1a1a;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+
+.icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+
+
+.text {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.details {
+    font-size: 14px;
+    color: #b3b3b3;
+}
