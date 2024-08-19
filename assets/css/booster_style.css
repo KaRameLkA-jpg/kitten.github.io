@@ -38,7 +38,7 @@ h2 {
     align-items: center;
     background-color: #1a1a1a;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 20px;
     margin-bottom: 10px;
 }
 
@@ -63,4 +63,8 @@ h2 {
 .details {
     font-size: 14px;
     color: #b3b3b3;
+}
+.back_click {
+    display: flex;
+    margin-top:10px;
 }

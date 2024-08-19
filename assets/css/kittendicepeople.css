@@ -142,6 +142,8 @@ input[type=number] {
     top:-199px;
     z-index: -1;
 }
-
+.back_click {
+    position: absolute;
+}
 
 

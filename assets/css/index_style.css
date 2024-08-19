@@ -171,7 +171,7 @@ html {
 
 /*Контенер энергии и буста*/
 .menu-container {
-    margin-top: 6rem;
+    margin-top: 5.5rem;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -218,4 +218,3 @@ html {
         transform: translateY(-50px);
     }
 }
-
