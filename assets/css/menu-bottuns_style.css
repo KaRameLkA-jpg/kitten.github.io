@@ -7,6 +7,7 @@
     align-items: center;
     background-color: #1C1C1D;
     border-radius: 52px;
+    box-shadow: 0 0 10px black;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -39,4 +40,35 @@
 
 .b-r span {
     color : #FFD700;
+}
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 1px 1px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.button:hover {
+    background-color: #1C1C1D;
+}
+
+.button:active {
+    background-color: #1C1C1D;
+    transform: translateY(2px);
+    animation: vibrate 0.1s linear infinite;
+}
+
+.button.active {
+    background-color: #1C1C1D;
+    transform: translateY(2px);
+}
+
+@keyframes vibrate {
+    0% { transform: translateY(2px); }
+    50% { transform: translateY(0); }
+    100% { transform: translateY(2px); }
 }

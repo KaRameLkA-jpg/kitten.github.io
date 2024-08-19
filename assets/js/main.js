@@ -83,6 +83,7 @@ const h1 = body.querySelector('#coin');
 const rankText = body.querySelector('#rank');
 const progress = body.querySelector('.progress');
 const image = body.querySelector('#clicks'); // Получаем элемент изображения для эффектов
+const menu = body.querySelector('#menu');
 
 let coins = parseFloat(localStorage.getItem('coin')) || 0.001;
 let total = parseFloat(localStorage.getItem('total')) || 0.100;
@@ -99,36 +100,42 @@ function updateRank() {
             rankText.className = 'rank-text bronze';
             progress.className = 'progress bronze';
             image.style.filter = 'drop-shadow(0 0 30px #cd7f32)'; // Bronze glow
+            menu.style.filter = 'box-shadow: 0 0 10px #cd7f32';
             break;
         case 1:
             rankText.textContent = 'Silver';
             rankText.className = 'rank-text silver';
             progress.className = 'progress silver';
-            image.style.filter = 'drop-shadow(0 0 30px #c0c0c0)'; // Silver glow
+            image.style.filter = 'drop-shadow(0 0 30px #c0c0c0)';// Silver glow
+            menu.style.filter = 'box-shadow: 0 0 10px #c0c0c0';
             break;
         case 2:
             rankText.textContent = 'Gold';
             rankText.className = 'rank-text gold';
             progress.className = 'progress gold';
-            image.style.filter = 'drop-shadow(0 0 30px #ffd700)'; // Gold glow
+            image.style.filter = 'drop-shadow(0 0 30px #ffd700)';// Gold glow
+            menu.style.filter = 'drop-shadow(0 0 10px #ffd700)';
             break;
         case 3:
             rankText.textContent = 'Diamond';
             rankText.className = 'rank-text diamond';
             progress.className = 'progress diamond';
             image.style.filter = 'drop-shadow(0 0 30px #b9f2ff)'; // Diamond glow
+            menu.style.filter = 'drop-shadow(0 0 10px #b9f2ff)';
             break;
         case 4:
             rankText.textContent = 'Ruby';
             rankText.className = 'rank-text ruby';
             progress.className = 'progress ruby';
             image.style.filter = 'drop-shadow(0 0 30px #e0115f)'; // Ruby glow
+            menu.style.filter = 'drop-shadow(0 0 10px #e0115f)';
             break;
         default:
             rankText.textContent = 'Bronze';
             rankText.className = 'rank-text bronze';
             progress.className = 'progress bronze';
             image.style.filter = 'drop-shadow(0 0 30px #cd7f32)';
+            menu.style.filter = 'drop-shadow(0 0 10px #c0c0c0)';
             progress.style.width = '100%';
             return;
     }
@@ -160,7 +167,7 @@ image.addEventListener('click', (event) => {
     coins += 0.001;
     power -= 0.001;
     localStorage.setItem('coin', coins);
-    localStorage.setItem('power', total);
+    localStorage.setItem('power', power);
 
     // Обновляем отображение монет
     h1.textContent = coins.toFixed(3).toLocaleString();
@@ -177,7 +184,7 @@ image.addEventListener('click', (event) => {
     plusText.style.position = 'absolute';
     plusText.style.left = `${event.clientX}px`;
     plusText.style.top = `${event.clientY}px`;
-    plusText.style.color = 'silver'; // Цвет золотой
+    plusText.style.color = 'silver';
     plusText.style.fontSize = '25px';
     plusText.style.fontWeight = 'bold';
     plusText.style.pointerEvents = 'none';
