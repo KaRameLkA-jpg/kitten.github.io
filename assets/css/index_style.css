@@ -152,6 +152,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 50%;
 }
 .coin-container img {
     box-shadow: 0 0 50px black; /* Свечение */
@@ -217,4 +218,10 @@ html {
         opacity: 0;
         transform: translateY(-50px);
     }
+}
+
+/* Эффект нажатия */
+.shrink {
+    transform: scale(0.95); /* Уменьшение размера картинки на 5% */
+    transition: transform 0.1s ease; /* Плавный переход */
 }

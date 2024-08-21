@@ -84,6 +84,9 @@ function updateProgress() {
 
 // Функция обработки клика на картинку
 image.addEventListener('click', (event) => {
+    if (power <= 0) {
+        return; // Блокируем действие, если энергия меньше или равна 0
+    }
     // Добавляем монеты
     coins += 0.001;
     power -= 0.001;
@@ -124,6 +127,43 @@ function createClickEffect(x, y) {
     effect.addEventListener("animationend", function () {
         effect.remove();
     });
+
+    // Функция обработки клика на картинку
+    image.addEventListener('mousedown', () => {
+        image.classList.add('shrink');
+        triggerVibration();
+    });
+
+    image.addEventListener('mouseup', () => {
+        image.classList.remove('shrink');
+    });
+
+    image.addEventListener('mouseleave', () => {
+        image.classList.remove('shrink');
+    });
+
+// Обработка касания для мобильных устройств
+    image.addEventListener('touchstart', () => {
+        image.classList.add('shrink');
+        triggerVibration();
+    });
+
+    image.addEventListener('touchend', () => {
+        image.classList.remove('shrink');
+    });
+
+    image.addEventListener('touchcancel', () => {
+        image.classList.remove('shrink');
+    });
+
+// Функция для вызова вибрации
+    function triggerVibration() {
+        if (navigator.vibrate) {
+            navigator.vibrate(100); // Вибрация на 100 мс
+        }
+    }
+
+
 }
 
 // Функция для обновления энергии каждую секунду
