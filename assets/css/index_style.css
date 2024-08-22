@@ -155,7 +155,7 @@ html {
     border-radius: 50%;
 }
 .coin-container img {
-    box-shadow: 0 0 50px black; /* Свечение */
+    box-shadow: 0 0 2rem black; /* Свечение */
     transition: radial-shadow 0.3s ease; /* Плавный переход */
     border-radius: 50%; /* Круглая форма */
 }

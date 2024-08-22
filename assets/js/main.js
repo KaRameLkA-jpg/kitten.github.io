@@ -103,25 +103,9 @@ image.addEventListener('click', (event) => {
 
 
     // Вибрация (если поддерживается)
-    if ('vibrate' in navigator) {
-        // Использование Navigator Vibration API
-        navigator.vibrate(100);
-    } else if ('onavibrationchange' in window) {
-        // Использование старого API вибрации
-        window.navigator.onavibrationchange = () => {
-            window.navigator.onavibrate(100);
-        };
-    } else if ('mozVibrate' in navigator) {
-        // Использование Mozilla Vibration API
-        navigator.mozVibrate(100);
-    } else if ('webkitVibrate' in navigator) {
-        // Использование WebKit Vibration API
-        navigator.webkitVibrate(100);
-    } else {
-        // Вибрация не поддерживается
-        console.log('Вибрация не поддерживается в этом браузере.');
+    if (navigator.vibrate) {
+        navigator.vibrate(100); // Вибрация на 100 мс
     }
-
 });
 
 // Функция для обновления UI энергии
