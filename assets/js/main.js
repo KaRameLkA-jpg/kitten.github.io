@@ -4,7 +4,7 @@ const rankText = body.querySelector('#rank');
 const progress = body.querySelector('.progress');
 const image = body.querySelector('#clicks'); // Получаем элемент изображения для эффектов
 const menu = body.querySelector('#menu');
-const powerDisplay = body.querySelector('#power')
+const powerDisplay = body.querySelector('#power');
 
 let coins = parseFloat(localStorage.getItem('coin')) || 0.001;
 let total = parseFloat(localStorage.getItem('total')) || 0.100;
@@ -21,20 +21,20 @@ function updateRank() {
             rankText.className = 'rank-text bronze';
             progress.className = 'progress bronze';
             image.style.filter = 'drop-shadow(0 0 30px #cd7f32)'; // Bronze glow
-            menu.style.filter = 'box-shadow: 0 0 10px #cd7f32';
+            menu.style.filter = 'drop-shadow(0 0 10px #cd7f32)';
             break;
         case 1:
             rankText.textContent = 'Silver';
             rankText.className = 'rank-text silver';
             progress.className = 'progress silver';
-            image.style.filter = 'drop-shadow(0 0 30px #c0c0c0)';// Silver glow
-            menu.style.filter = 'box-shadow: 0 0 10px #c0c0c0';
+            image.style.filter = 'drop-shadow(0 0 30px #c0c0c0)'; // Silver glow
+            menu.style.filter = 'drop-shadow(0 0 10px #c0c0c0)';
             break;
         case 2:
             rankText.textContent = 'Gold';
             rankText.className = 'rank-text gold';
             progress.className = 'progress gold';
-            image.style.filter = 'drop-shadow(0 0 30px #ffd700)';// Gold glow
+            image.style.filter = 'drop-shadow(0 0 30px #ffd700)'; // Gold glow
             menu.style.filter = 'drop-shadow(0 0 10px #ffd700)';
             break;
         case 3:
@@ -84,29 +84,34 @@ function updateProgress() {
 
 // Функция обработки клика на картинку
 image.addEventListener('click', (event) => {
-    if (power <= 0) {
+    if (power <= 0.001) {
         return; // Блокируем действие, если энергия меньше или равна 0
     }
+
     // Добавляем монеты
     coins += 0.001;
     power -= 0.001;
-    localStorage.setItem('coin', coins);
+    localStorage.setItem('coin', coins.toFixed(3)); // Обновляем localStorage
     localStorage.setItem('power', power);
 
     // Обновляем отображение монет
-    h1.textContent = coins.toFixed(3).toLocaleString();
+    updateCoinDisplay();
     updateEnergyDisplay();
 
     // Обновляем прогресс
     updateProgress();
     createClickEffect(event.clientX, event.clientY);
 
-
     // Вибрация (если поддерживается)
     if (navigator.vibrate) {
         navigator.vibrate(100); // Вибрация на 100 мс
     }
 });
+
+// Функция для обновления отображения монет
+function updateCoinDisplay() {
+    h1.textContent = coins.toFixed(3).toLocaleString();
+}
 
 // Функция для обновления UI энергии
 function updateEnergyDisplay() {
@@ -127,7 +132,6 @@ function createClickEffect(x, y) {
     effect.addEventListener("animationend", function () {
         effect.remove();
     });
-
     // Функция обработки клика на картинку
     image.addEventListener('mousedown', () => {
         image.classList.add('shrink');
@@ -156,21 +160,24 @@ function createClickEffect(x, y) {
         image.classList.remove('shrink');
     });
 
-// Функция для вызова вибрации
-    function triggerVibration() {
-        if (window.navigator.vibrate) {
-            window.navigator.vibrate(100); // Вибрация на 100 мс
-        }
-    }
-
-
 }
+
+// Обработчик события storage для синхронизации между вкладками
+window.addEventListener('storage', (event) => {
+    if (event.key === 'coin') {
+        coins = parseFloat(event.newValue); // Обновляем значение монет
+        updateCoinDisplay(); // Обновляем отображение
+    } else if (event.key === 'power') {
+        power = parseFloat(event.newValue); // Обновляем значение энергии
+        updateEnergyDisplay(); // Обновляем отображение
+    }
+});
 
 // Функция для обновления энергии каждую секунду
 function regenerateEnergy() {
     if (power < maxEnergy) {
         power = Math.min(maxEnergy, power + 0.001); // Увеличиваем энергию, но не превышаем максимум
-        localStorage.setItem('power', power); // Сохраняем энергию в локальном хранилище
+        localStorage.setItem('power', power.toFixed(3)); // Сохраняем энергию в локальном хранилище
         updateEnergyDisplay(); // Обновляем UI для энергии
     }
 }
@@ -178,7 +185,8 @@ function regenerateEnergy() {
 // Запуск таймера для восстановления энергии каждую секунду
 setInterval(regenerateEnergy, 1000);
 
-h1.textContent = coins.toFixed(3).toLocaleString();
+// Обновляем отображение при загрузке страницы
+updateCoinDisplay();
 updateEnergyDisplay();
 
 if (total > 0.001) {
@@ -189,4 +197,3 @@ if (total > 0.001) {
 }
 
 updateRank();
-
