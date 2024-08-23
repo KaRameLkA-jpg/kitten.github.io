@@ -158,8 +158,8 @@ function createClickEffect(x, y) {
 
 // Функция для вызова вибрации
     function triggerVibration() {
-        if (navigator.vibrate) {
-            navigator.vibrate(100); // Вибрация на 100 мс
+        if (window.navigator.vibrate) {
+            window.navigator.vibrate(100); // Вибрация на 100 мс
         }
     }
 
