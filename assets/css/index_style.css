@@ -34,13 +34,14 @@ html {
 }
 .squad-container {
     display: flex;
-    margin-left: 10%;
+    margin-left: 5%;
+    margin-top: 5%;
     font-weight: bold;
-    font-size: 100%;
+
 }
 .user-data {
     display: flex;
-    margin-left: 5%;
+    margin-left: 4%;
     align-items: center;
 }
 .username {
@@ -49,7 +50,7 @@ html {
 
 /*Ранг контенер*/
 .rank-container {
-    margin-top: 5%;
+    margin-top: -5%;
     margin-bottom: 1%;
     display: flex;
     justify-content: center;
