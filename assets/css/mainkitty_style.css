@@ -26,8 +26,6 @@ html {
     -webkit-user-drag: none; /* Запрещает перетаскивание элементов на сенсорных устройствах */
     -webkit-tap-highlight-color: transparent; /* Убирает подсветку ссылок на сенсорных устройствах */
 
-
-
 }
 .header-container {
     display: flex;
