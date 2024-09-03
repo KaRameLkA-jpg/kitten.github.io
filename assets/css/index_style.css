@@ -6,9 +6,6 @@
 a {
     text-decoration: none;
 }
-a:active {
-    color: rgba(241,158,54,1);
-}
 html {
     font-family: sans-serif;
 }

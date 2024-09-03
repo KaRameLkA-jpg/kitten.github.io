@@ -6,6 +6,9 @@
 a {
     text-decoration: none;
 }
+a:active {
+    color: rgba(241,158,54,1);
+}
 
 html {
     font-family: sans-serif;
@@ -38,6 +41,7 @@ body {
 .menu-item {
     text-align: center;
     position: relative;
+    color: white;
 }
 
 .icon {
