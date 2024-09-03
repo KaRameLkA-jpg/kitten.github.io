@@ -29,10 +29,18 @@ html {
 
 
 }
+.back_click {
+    display: flex;
+    margin-top:2%;
+    margin-left: 1%;
+}
 .squad-container {
     display: flex;
-    margin-left: 5%;
-    margin-top: 5%;
+    position: relative; /* Важно! */
+    top: -35px; /* Поднимает элемент вверх */
+    left: -6%;
+    margin: 0;
+    padding: 0;
     font-weight: bold;
 
 }
@@ -47,7 +55,7 @@ html {
 
 /*Ранг контенер*/
 .rank-container {
-    margin-top: -5%;
+    margin-top: -12%;
     margin-bottom: 1%;
     display: flex;
     justify-content: center;
