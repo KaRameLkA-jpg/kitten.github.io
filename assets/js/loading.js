@@ -24,9 +24,9 @@ function hideLoadingScreen() {
 }
 
 function loadMainPage() {
-    // Загрузка и переход к index.html
+    // Загрузка и переход к console.html
     setTimeout(() => {
-        window.location.href = './index.html';
+        window.location.href = '../../console.html';
     }, 1000);
 }
 

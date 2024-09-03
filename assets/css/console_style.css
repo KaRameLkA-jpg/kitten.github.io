@@ -1,0 +1,59 @@
+* {
+    margin: 1%;
+    padding: 0.5%;
+    box-sizing: border-box;!important;
+}
+a {
+    text-decoration: none;
+}
+
+html {
+    font-family: sans-serif;
+}
+body {
+    background-image: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-size: 16px;
+    padding-bottom: 4rem;
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    touch-action: none; /* Запрещает масштабирование на сенсорных устройствах */
+    -ms-touch-action: none; /* Для поддержки Internet Explorer */
+    -webkit-user-select: none; /* Запрещает выделение текста на сенсорных устройствах */
+    -webkit-user-drag: none; /* Запрещает перетаскивание элементов на сенсорных устройствах */
+    -webkit-tap-highlight-color: transparent; /* Убирает подсветку ссылок на сенсорных устройствах */
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10%;
+
+}
+
+.menu-item {
+    text-align: center;
+    position: relative;
+}
+
+.icon {
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.label {
+    font-size: 150%;
+    font-weight: bold;
+}
+
+.placeholder {
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    background-color: #cccccc;
+    margin-bottom: 10px;
+}
