@@ -16,13 +16,6 @@
         background-position: center;
 
     }
-    .squad-container {
-        margin: 1.75rem auto;
-        width: 80%;
-        display: flex;
-        align-items: center;
-        height: 4.5rem;
-    }
     .slide  {
         width: 19.5rem!important;
     }
@@ -46,13 +39,6 @@
         background-size: 450px;
         background-position: center;
 
-    }
-    .squad-container {
-        margin: 1.75rem auto;
-        width: 80%;
-        display: flex;
-        align-items: center;
-        height: 4.5rem;
     }
     .slide  {
         width: 19.5rem!important;
