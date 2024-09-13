@@ -98,7 +98,7 @@ body {
     align-items:center;
 }
 .transaction-hist {
-    margin-top: 60%;
+    margin-top: 45%;
     display: flex;
     width: 90%;
     padding: 2%;
@@ -107,4 +107,8 @@ body {
     cursor: pointer;
     justify-content: space-between;
     align-items: center;
+}
+.cover {
+    display: flex;
+    justify-content: center;
 }
