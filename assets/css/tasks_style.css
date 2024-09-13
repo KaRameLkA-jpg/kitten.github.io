@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;!important;
-    max-height: 800px;
 }
 a {
     text-decoration: none;
@@ -13,7 +12,7 @@ a:active {
 html {
     font-family: sans-serif;
 }
-.tasks {
+body {
     background-image: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -43,6 +42,7 @@ p {
 }
 .container {
     width: 100%;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -50,30 +50,41 @@ p {
 }
 .header {
     background-color: #42a5f5;
-    padding: 10px;
+    padding: 5px 5px;
     border-radius: 30px;
     text-align: center;
-    max-width: 400px;
+    max-width: 100%;
     width: 100%; /* Устанавливаем ширину на 100% для занятия всей ширины родителя */
     box-sizing: border-box; /* Включаем учет padding в общей ширине */
 }
 .header h1 {
     margin: 0;
-    font-size: 1em;
+    font-size: 20px;
 }
 .header p {
-    margin: 10px 0;
-    font-size: 1em;
+    margin: 5px 0;
+    font-size: 17px;
 }
 .header button {
     background-color: white;
-    padding: 10px 10px;
+    padding: 5px 5px;
     border-radius: 20px;
     cursor: pointer;
     font-size: 1em;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.header button:active {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    transform: translateY(2px);
+
 }
 .section {
     margin-top: 20px;
+    width: 100%;
+    height: 100%;
 }
 .section h2 {
     font-size: 1em;
@@ -84,10 +95,14 @@ p {
     justify-content: space-between;
     align-items: center;
     background-color: #1C1C1D;
-    padding: 10px;
+    padding: 15px 15px;
     border-radius: 30px;
-    margin-bottom: 10px;
-    max-width: 400px;
+    margin-bottom: 2%;
+    height: 20%;
+}
+.task:active{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    transform: translateY(2px);
 }
 .task img {
     width: 24px;

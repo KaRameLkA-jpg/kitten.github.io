@@ -1,5 +1,5 @@
 /* frens styles */
-.frens {
+body {
     background-image: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -24,7 +24,8 @@
     align-items: center;
 }
 .frens-count {
-    margin-bottom: 2%;
+    margin-top: 1rem;
+    margin-bottom: 10px;
     font-size: 2rem;
     font-weight: bold;
 }
@@ -36,11 +37,12 @@
 .frens-total-earn {
     display: flex;
     align-items: center;
-    width: 85%;
+    width: 94%;
     border-radius: 30px;
     background-color: #1C1C1D;
     padding: 0.50rem;
     margin-bottom: 3%;
+
 }
 .frens-small-invite {
     font-size: 0.8rem;
@@ -77,7 +79,9 @@
     margin-right: 0.5rem;
 }
 .frens-yellow {
-    color: rgba(255,215,0,1);
+    font-weight: bold;
+    color: #fbc02d;
+    font-size: 0.9em;
 }
 .frens-help,
 .frens-list {
@@ -93,8 +97,7 @@
 }
 .frens-list-box {
     align-content: center;
-    width: 93%;
-    margin-left: 10px;
+    width: 100%;
     font-size: 1rem;
     font-weight: bold;
     vertical-align: middle;
@@ -123,7 +126,9 @@
     color: rgb(255, 215, 0);
 }
 .frens-data-count span{
-    margin-right: 0.25rem;
+    font-weight: bold;
+    color: #fbc02d;
+    font-size: 0.9em;
 }
 .frens-invite {
     display: flex;
@@ -151,6 +156,12 @@
     color: white;
     font-size: 150%;
 }
+
+.invy-button:active{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    transform: translateY(2px);
+
+}
 .frens-other-button {
     background-color: #24A1DE;
     color: white;
@@ -174,4 +185,9 @@
     border-radius: 15%;
     top: 50%;
     transform: translateY(-50%);
+}
+
+.frens-other-button:active {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    transform: translateY(2px);
 }

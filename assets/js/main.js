@@ -159,7 +159,7 @@ function createClickEffect(x, y) {
     image.addEventListener('touchcancel', () => {
         image.classList.remove('shrink');
     });
-
+Ђ
 }
 
 // Обработчик события storage для синхронизации между вкладками
