@@ -29,9 +29,12 @@ body {
 
 .wallet_main_inf span {
     display: flex;
-    font-weight: 500;
-    vertical-align: center;
-    padding-top: 4%;
+    font-weight: semi-bold;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding-left: 2%;
+    align-items: center;
     font-size: 120%;
 }
 .wallet_main_inf a {
@@ -59,7 +62,6 @@ body {
 }
 .wallet_bonus {
     margin-top: 10%;
-    margin-left: 3%;
     display: flex;
     width: 90%;
     padding: 2%;
@@ -69,14 +71,40 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-.wallet_bonus div {
+.coins_count {
     display: flex;
-    flex-direction: row;
+    width: 90%;
+    margin-top: 3%;
+    background-color: #1c1c1d;
+    border-radius: 10px;
+    padding: 2%;
+    justify-content: space-between;
+    align-items: center;
 }
-.wallet_bonus span {
+.left-side{
     display: flex;
-    font-weight: 500;
-    padding-top: 8%;
-    padding-left: 3%;
-    font-size: 100%;
+    align-items: center;
+    white-space: nowrap;
+}
+.left-side img {
+    padding-right: 3%;
+}
+.left-side span {
+    padding-left: 2%;
+    white-space: nowrap;
+}
+.right-side {
+    font-weight: semi-bold;
+    align-items:center;
+}
+.transaction-hist {
+    margin-top: 60%;
+    display: flex;
+    width: 90%;
+    padding: 2%;
+    background-color: #1c1c1d;
+    border-radius: 10px;
+    cursor: pointer;
+    justify-content: space-between;
+    align-items: center;
 }
