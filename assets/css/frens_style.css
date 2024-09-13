@@ -1,4 +1,9 @@
-/* frens styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-image: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 100%);
     background-repeat: no-repeat;
@@ -10,184 +15,170 @@ body {
     width: 100%;
     height: 100%;
     overflow: hidden;
+    max-width: 400px;
+    max-height: 800px;
     touch-action: none; /* Запрещает масштабирование на сенсорных устройствах */
     -ms-touch-action: none; /* Для поддержки Internet Explorer */
     -webkit-user-select: none; /* Запрещает выделение текста на сенсорных устройствах */
     -webkit-user-drag: none; /* Запрещает перетаскивание элементов на сенсорных устройствах */
-    -webkit-tap-highlight-color: transparent; /* Убирает подсветку ссылок на сенсорных устройствах */
-
+    -webkit-tap-highlight-color: transparent;
 }
-.frens-main  {
+
+.container {
+    width: 90%;
+    max-width: 400px;
+    margin: 40px auto;
+    text-align: left;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.subtext {
+    font-size: 14px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.invite-options {
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.invite-card {
+    display: flex;
+    align-items: center;
+    background-color: #1C1C1D;
+    padding: 7px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+
+.gift-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.invite-text {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.frens-count {
-    margin-top: 1rem;
-    margin-bottom: 10px;
-    font-size: 2rem;
-    font-weight: bold;
-}
-.frens-inscription {
-    margin-bottom: 5rem;
-    font-size: 100%;
-    font-weight: bold;
-}
-.frens-total-earn {
-    display: flex;
-    align-items: center;
-    width: 94%;
-    border-radius: 30px;
-    background-color: #1C1C1D;
-    padding: 0.50rem;
-    margin-bottom: 3%;
 
 }
-.frens-small-invite {
-    font-size: 0.8rem;
-    font-weight: bold;
-    line-height: 150%;
-}
-.bold {
-    font-weight: bold;
-}
-.invite-bold {
-    display: flex;
-    font-weight: bold;
-    align-items: center;
-    height: 100%;
-    font-size: 1em;
-    justify-content: center;
-}
-.normal {
-    font-weight: normal;
-}
-.blue {
-    color: #24a1de;
-}
-.frens-total-count {
-    display: flex;
-    align-items: center;
-    font-weight: bold;
-}
-.frens-total-count span {
-    display: inline-block;
-    margin-right: 0.5rem;
-}
-.frens-help-image {
-    margin-right: 0.5rem;
-}
-.frens-yellow {
-    font-weight: bold;
-    color: #fbc02d;
-    font-size: 0.9em;
-}
-.frens-help,
-.frens-list {
-    padding: 0.5rem;
-    font-size: 1rem;
-}
-.frens-help-title,
-.frens-list-title {
-    color: rgba(255,255,255,1);
-    font-weight: bold;
-    margin-bottom: 0.75rem;
-    margin-top: 1rem;
-}
-.frens-list-box {
-    align-content: center;
-    width: 100%;
-    font-size: 1rem;
-    font-weight: bold;
-    vertical-align: middle;
-    margin-bottom: 3%;
-    border-radius: 30px;
-    background-color: #1C1C1D;
-}
-.frens-data {
-    padding: 0.5rem;
-}
-.frens-data,
-.frens-profile {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 6px;
-}
-.frens-profile-photo {
-    background-color: #1C1C1D;
-    margin-right: 5px;
-}
-.frens-data-count {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: rgb(255, 215, 0);
-}
-.frens-data-count span{
-    font-weight: bold;
-    color: #fbc02d;
-    font-size: 0.9em;
-}
-.frens-invite {
-    display: flex;
-    position: fixed;
-    bottom: 9.8%;
-    z-index: 999;
-    font-size: 100%;
-    width: 400px;
-    align-items: center;
-}
 
-.invy-button {
-    background-color: #24A1DE;
-    border: none;
-    height: 60px;
-    margin-left: 7%;
-    width: 70%;
-    display: inline-block;
-    border-radius: 10px;
-    cursor: pointer;
-    text-align: center;
-    vertical-align: middle;
-}
-.invy-button span {
-    color: white;
-    font-size: 150%;
-}
-
-.invy-button:active{
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-    transform: translateY(2px);
-
-}
-.frens-other-button {
-    background-color: #24A1DE;
-    color: white;
-    border: none;
-    margin-left: 3%;
-    text-align: center;
-    cursor: pointer;
+.invite-card a {
+    color: #00A0E4;
     text-decoration: none;
-    position: relative; /* Делаем родительским элементом для квадрата */
+    font-weight: bold;
+    font-size: 12px;
+
 }
 
-.square-button {
-    background-color: #24A1DE;
-    position: absolute;
+.reward1 {
+    font-weight: bold;
+    color: #fbc02d;
+    font-size: 0.9em;
+}
+.reward2 {
+    color: white;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+h2 {
+    font-size: 15px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.friends-list {
+    margin-bottom: 20px;
+}
+
+.friend-card {
     display: flex;
-    height: 1200%;
-    width: 500%;
-    justify-content: center;
     align-items: center;
-    left: 0;
-    border-radius: 15%;
-    top: 50%;
-    transform: translateY(-50%);
+    justify-content: space-between;
+    background-color: #1C1C1D;
+    padding: 7px;
+    border-radius: 30px;
+    margin-bottom: 10px;
 }
 
-.frens-other-button:active {
+.friend-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.friend-info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.friend-name {
+    font-size: 16px;
+}
+
+.points {
+    font-weight: bold;
+    color: #fbc02d;
+    font-size: 0.9em;
+}
+
+.kitn-reward {
+    font-weight: bold;
+    color: #fbc02d;
+    font-size: 0.9em;
+}
+.contener-invite {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 150px;
+}
+
+.invite-btn {
+    display: block;
+    width: 80%;
+    background-color: #00A0E4;
+    border: none;
+    color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+.invite_block {
+    display: block;
+    background-color: #00A0E4;
+    border: none;
+    padding: 5px;
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+
+}
+.invite_block:active{
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     transform: translateY(2px);
 }
+
+
+.invite-btn:active {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    transform: translateY(2px);
+}
+

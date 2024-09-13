@@ -197,3 +197,17 @@ if (total > 0.001) {
 }
 
 updateRank();
+
+// Обработчик нажатия на кнопку "Назад"
+function handleBackButton() {
+    // Отправляем данные обратно в Telegram
+    Telegram.GameWidget.gameCallbackData('back');
+}
+
+// Создаем кнопку "Назад"
+const backButton = document.createElement('button');
+backButton.textContent = 'Назад';
+backButton.addEventListener('click', handleBackButton);
+
+// Добавляем кнопку "Назад" на страницу
+document.body.appendChild(backButton);

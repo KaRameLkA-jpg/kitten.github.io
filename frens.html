@@ -12,122 +12,66 @@
 
     <link rel="icon" type="image/x-icon" href="./assets/favicon/favicon.ico">
 </head>
-<body class="frens">
+<body>
 
-    <div class="frens-main">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invite Friends</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Invite friends!</h1>
+    <p class="subtext">You and your friend will recieve coins</p>
 
-        <div class="frens-count">
-            <span>Invite friends!</span>
-        </div>
-
-        <div class="frens-inscription">
-            <span>You and your friend will recieve coins</span>
-        </div>
-
-        <div class="frens-total-earn">
-            <div class="frens-help-image">
-                <img src="./assets/images/small_gift.png" width="30px">
+    <div class="invite-options">
+        <div class="invite-card">
+            <img src="./assets/images/small_gift.png" alt="Gift Icon" class="gift-icon">
+            <div class="invite-text">
+                <span>Invite a friend</span>
+                <span class="reward1">• +0,5 KITN <span class="reward2">for you and your friend</span> </span>
             </div>
-            <div class="frens-small-invite">
-                <span class="bold">Invite a friend</span>
-                <div class="frens-total-count">
-                    <span class="frens-yellow">· +0,5 KITN</span>
-                    <span class="normal">for you and your friend</span>
-                </div>
-            </div>
         </div>
+        <div class="invite-card">
+            <img src="./assets/images/small_gift.png" alt="Gift Icon" class="gift-icon">
+            <div class="invite-text">
+                <span>Invite a friend with <a href="#">Telegram Premium</a></span>
+                <span class="reward1">• +1,0 KITN <span class="reward2">for you and your friend</span> </span>
 
-        <div class="frens-total-earn">
-            <div class="frens-help-image">
-                <img src="./assets/images/small_gift.png" width="30px">
-            </div>
-            <div class="frens-small-invite">
-                <span>Invite a friend with</span>
-                <span class="blue">Telegram Premium</span>
-                <div class="frens-total-count">
-                    <span class="frens-yellow">· +0,5 KITN</span>
-                    <span class="normal">for you and your friend</span>
-                </div>
             </div>
         </div>
     </div>
 
-    <div class="frens-list">
-        <div class="frens-list-title">
-            <span>List of your friends</span>
-        </div>
-
-        <div class="frens-list-box">
-            <div class="frens-data">
-                <div class="frens-profile">
-                    <div class="frens-help-image">
-                        <img src="./assets/images/mouse.png" width="30px">
-                    </div>
-                    <div class="frens-profile-data">
-                        <span class="bold">Artem</span>
-                        <span class="frens-yellow">· 14,789</span>
-                    </div>
-                </div>
-
-                <div class="frens-data-count">
-                    <span class="bold">+ 0.5 KITN</span>
-                </div>
+    <h2>List of your friends (2)</h2>
+    <div class="friends-list">
+        <div class="friend-card">
+            <img src="./assets/images/grey%20icon.jpg" alt="Avatar" class="friend-avatar">
+            <div class="friend-info">
+                <span class="friend-name">Artem</span>
+                <span class="points">• 14,789</span>
             </div>
+            <span class="kitn-reward">+0,5 KITN</span>
         </div>
-
-        <div class="frens-list-box">
-            <div class="frens-data">
-                <div class="frens-profile">
-                    <div class="frens-help-image">
-                        <img src="./assets/images/mouse.png" width="30px">
-                    </div>
-                    <div class="frens-profile-data">
-                        <span class="blue">Bebra2001</span>
-                        <span class="frens-yellow">· 5,897</span>
-                    </div>
-                </div>
-
-                <div class="frens-data-count">
-                    <span class="bold">+ 1.0 KITN</span>
-                </div>
+        <div class="friend-card">
+            <img src="/assets/images/grey%20icon.jpg" alt="Avatar" class="friend-avatar">
+            <div class="friend-info">
+                <span class="friend-name">Bebra2001</span>
+                <span class="points">• 5,897</span>
             </div>
+            <span class="kitn-reward">+1,0 KITN</span>
         </div>
     </div>
+<div class="contener-invite">
+    <button class="invite-btn">Invite a friend </button>
+    <button class="invite_block"><img src="./assets/images/square_image.png" width="50px"></button>
+</div>
+</div>
+</body>
+</html>
 
-    <div class="frens-invite">
-        <button class="invy-button">
-            <span class="invite-bold">Invite a friend</span>
-        </button>
-        <button class="frens-other-button">
-            <div class="square-button">
-                <img src="./assets/images/square_image.png" alt="" width="50px">
-            </div>
-        </button>
-    </div>
-
-    <div class="menu-bottuns" id="menu">
-        <a href="./mainkitty.html" class="button b-r">
-            <img src="./assets/images/mine.png" alt="" width="28px">
-            <span class="select-none-bottuns">Mine</span>
-        </a>
-        <a href="./earn.html" class="button b-r">
-            <img src="./assets/images/earn.png" alt="" width="28px">
-            <span class="select-none-bottuns">Earn</span>
-        </a>
-        <a href="./tasks.html" class="button b-r">
-            <img src="./assets/images/tasks.png" alt="" width="28px">
-            <span class="select-none-bottuns">Tasks</span>
-        </a>
-        <a href="./frens.html" class="button b-r">
-            <img src="./assets/images/frends.png" alt="" width="28px">
-            <span class="select-none-bottuns">Friends</span>
-        </a>
-        <a href="./airdrop.html" class="button b-r">
-            <img src="./assets/images/airdrop.png" alt="" width="28px">
-            <span class="select-none-bottuns">AirDrop</span>
-        </a>
-    </div>
-    <script src="./assets/js/main.js"></script>
-
+</div>
 </body>
 </html>
