@@ -70,6 +70,8 @@ body {
     cursor: pointer;
     justify-content: space-between;
     align-items: center;
+    text-decoration: none;
+    color: #ffffff;
 }
 .coins_count {
     display: flex;
@@ -98,6 +100,8 @@ body {
     align-items:center;
 }
 .transaction-hist {
+    text-decoration: none;
+    color: #ffffff;
     margin-top: 45%;
     display: flex;
     width: 90%;
