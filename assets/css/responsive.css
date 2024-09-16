@@ -8,11 +8,11 @@
     .tasks,
     .mainkitty,
     .login-page {
-        max-width: 400px;!important;
-        max-height: 800px;!important;
+        max-width: 25rem;!important;
+        max-height: 50rem;!important;
         margin: auto auto;
         background-color: #111111;
-        background-size: 450px;
+        background-size: 28.125rem;
         background-position: center;
 
     }
@@ -23,7 +23,7 @@
         width: 26.5rem;
     }
 }
-@media screen and (max-width: 763px) {
+@media screen and (max-width: 47.6875rem) {
     body,
     .boost,
     .guid,
@@ -33,11 +33,11 @@
     .tasks,
     .mainkitty,
     .login-page {
-        max-width: 400px;!important;
-        max-height: 800px;!important;
+        max-width: 25rem;!important;
+        max-height: 50rem;!important;
         margin: auto auto;
         background-color: #111111;
-        background-size: 450px;
+        background-size: 28.125rem;
         background-position: center;
 
     }

@@ -5,16 +5,16 @@
     justify-content: space-around;
     align-items: center;
     background-color: #1C1C1D;
-    border-radius: 52px;
+    border-radius: 3.25rem;
     box-shadow: 0 0 10px black;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 15px; /* Расстояние от нижнего края экрана */
-    max-width: 400px;
+    bottom: 0.9375rem; /* Расстояние от нижнего края экрана */
+    max-width: 25rem;
 }
 .select-none-bottuns {
-    font-size : 10px;
+    font-size : 0.625rem;
     font-weight:bold;
 }
 .button {
@@ -45,19 +45,19 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    padding: 1px 1px;
+    padding: 0.0625rem 0.0625rem;
     text-decoration: none;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.1s;
 }
 
 button b-r:active{
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-    transform: translateY(2px);
+    box-shadow: 0 0.3125rem 0.625rem rgba(0, 0, 0, 0.3);
+    transform: translateY(0.125rem);
 }
 
 @keyframes vibrate {
-    0% { transform: translateY(2px); }
+    0% { transform: translateY(0.125rem); }
     50% { transform: translateY(0); }
-    100% { transform: translateY(2px); }
+    100% { transform: translateY(0.125rem); }
 }

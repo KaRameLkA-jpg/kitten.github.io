@@ -13,7 +13,7 @@ body {
     background-image: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    font-size: 16px;
+    font-size: 1rem;
     padding-bottom: 4rem;
     color: #ffffff;
     font-family: "Open Sans", sans-serif;
@@ -30,12 +30,12 @@ body {
 .header-container {
     display: flex;
     align-items: center; /* Выровнять элементы по центру по вертикали */
-    margin-left: 10px; /* Отступ для контейнера от края экрана */
+    margin-left: 0.625rem; /* Отступ для контейнера от края экрана */
 }
 .back_click {
     display: flex;
     align-items: center;
-    margin-right: 10px;
+    margin-right: 0.625rem;
 }
 .squad-container {
     display: flex;
@@ -104,18 +104,18 @@ body {
     margin-top: 5%;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
-    height: 7px;
+    height: 0.4375rem;
 }
 .progress-bar {
-    height: 7px;
+    height: 0.4375rem;
     width: 100%;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 0.625rem;
 }
 
 .progress-bar .progress {
     height: 100%;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     transition: width 0.5s;
 }
 
@@ -149,7 +149,7 @@ body {
 }
 .coin-count-container img {
     margin-right: 1rem;
-    width: 50px;
+    width: 3.125rem;
 }
 .coin-count-container h1 {
     color: #ffffff;
@@ -215,7 +215,7 @@ body {
 
 .effect {
     position: absolute;
-    font-size: 30px;
+    font-size: 1.875rem;
     font-family: "Open Sans", sans-serif;
     color: silver;
     animation: moveUp 1s ease-out forwards;
@@ -229,7 +229,7 @@ body {
     }
     100% {
         opacity: 0;
-        transform: translateY(-50px);
+        transform: translateY(-3.125rem);
     }
 }
 

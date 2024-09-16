@@ -1,22 +1,26 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;!important;
+    box-sizing: border-box !important;
 }
+
 a {
     text-decoration: none;
 }
+
 a:active {
     color: rgba(241,158,54,1);
 }
+
 html {
     font-family: sans-serif;
 }
+
 body {
     background-image: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    font-size: 16px;
+    font-size: 1rem; /* 16px -> 1rem */
     padding-bottom: 4rem;
     color: #ffffff;
     font-family: "Open Sans", sans-serif;
@@ -28,28 +32,31 @@ body {
     -webkit-user-select: none; /* Запрещает выделение текста на сенсорных устройствах */
     -webkit-user-drag: none; /* Запрещает перетаскивание элементов на сенсорных устройствах */
     -webkit-tap-highlight-color: transparent; /* Убирает подсветку ссылок на сенсорных устройствах */
-
 }
+
 .airdrop-container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .airdrop-container img {
-    width: 200px;
-    height: 200px;
+    width: 12.5rem; /* 200px -> 12.5rem */
+    height: 12.5rem; /* 200px -> 12.5rem */
     border-radius: 50%;
-    margin: 80px 0 10px;
-    box-shadow: 0 0 40px #CD7F32; /*rgba(255, 215, 0, 0.5); /* Свечение */
-    transition: radial-shadow 0.3s ease; /* Плавный переход */
-    border-radius: 50%; /* Круглая форма */
+    margin: 5rem 0 0.625rem; /* 80px -> 5rem, 10px -> 0.625rem */
+    box-shadow: 0 0 2.5rem #CD7F32; /* 40px -> 2.5rem */
+    transition: radial-shadow 0.3s ease;
+    border-radius: 50%;
 }
+
 .airdrop-container h1 {
-    font-size: 2em;
-    margin: 40px 0 10px;
+    font-size: 2rem; /* 2em остается */
+    margin: 2.5rem 0 0.625rem; /* 40px -> 2.5rem, 10px -> 0.625rem */
 }
+
 .airdrop-container p {
-    font-size: 1em;
-    margin: 5px 0;
+    font-size: 1rem; /* 1em остается */
+    margin: 0.3125rem 0; /* 5px -> 0.3125rem */
     text-align: center;
 }
