@@ -96,8 +96,22 @@ body {
     padding-top: 5%;
     padding-bottom: 5%;
     margin-top: 20%;
+    font-size: 125%;
     margin-bottom: 3%;
     cursor: pointer;
+    justify-content: center;
+    border-radius: 0.625rem;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    cursor: pointer;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 0 10px black;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2rem; /* Расстояние от нижнего края экрана */
+    max-width: 400px;
 }
 .invite-button {
     display: flex;
@@ -105,7 +119,17 @@ body {
     justify-content: center;
     width: 100%;
     border-radius: 0.625rem;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
     cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 0 10px black;
+    position: absolute;
+    left: 50%;
+    font-size: 125%;
+    transform: translateX(-50%);
+    bottom: 15px; /* Расстояние от нижнего края экрана */
+    max-width: 400px;
 }

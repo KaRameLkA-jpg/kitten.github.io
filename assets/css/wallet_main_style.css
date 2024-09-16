@@ -102,15 +102,21 @@ body {
 .transaction-hist {
     text-decoration: none;
     color: #ffffff;
-    margin-top: 45%;
     display: flex;
-    width: 90%;
-    padding: 2%;
+    width: 50%;
+    padding: 0.5%;
     background-color: #1c1c1d;
     border-radius: 0.625rem;
     cursor: pointer;
     justify-content: space-between;
     align-items: center;
+    background-color: #1C1C1D;
+    box-shadow: 0 0 10px black;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 15px; /* Расстояние от нижнего края экрана */
+    max-width: 400px;
 }
 .cover {
     display: flex;

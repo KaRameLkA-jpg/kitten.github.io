@@ -18,16 +18,26 @@ body {
     -webkit-tap-highlight-color: transparent;
 }
 .main-interface {
-    background-color: #3eb5f1;
+    background-color: #d7569c;
     display: flex;
     width: 100%;
     justify-content: center;
+    flex-direction: column;
 }
 .main-interface span {
+    display: flex;
+    justify-content: center;
     align-items:center;
-    padding-top: 20%;
-    padding-bottom: 30%;
+    padding-top: 5%;
+    margin-bottom: 5%;
     font-size: 200%;
+}
+.friends-count {
+    margin-bottom: 15%;
+    display: flex;
+    font-size: 50%;
+    justify-content: center;
+    align-items: center;
 }
 .cover {
     display: flex;
@@ -73,4 +83,24 @@ body {
 }
 .operation-type {
     font-size: 75%;
+}
+.invite-button {
+    display: flex;
+    background-color: #d7569c;
+    justify-content: center;
+    width: 100%;
+    border-radius: 0.625rem;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 0 10px black;
+    position: absolute;
+    left: 50%;
+    font-size: 125%;
+    transform: translateX(-50%);
+    bottom: 15px; /* Расстояние от нижнего края экрана */
+    max-width: 400px;
 }
