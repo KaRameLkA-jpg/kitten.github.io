@@ -9,7 +9,12 @@
     <meta name="theme-color" content="#0a0a0a" />
 
     <link rel="icon" type="image/x-icon" href="./assets/favicon/favicon.ico">
-
+    <script src=".https://telegram.org/js/telegram-web-app.js"></script>
+    <script>
+        window.Telegram.WebApp.ready(function () {
+            Telegram.WebApp.expand(); // Разворачивает приложение на весь экран
+        });
+    </script>
 </head>
 <body>
     <div class="menu-grid">
