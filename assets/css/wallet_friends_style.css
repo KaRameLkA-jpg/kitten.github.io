@@ -41,38 +41,16 @@ body {
     border-radius: 1.25rem;
     flex-direction: column;
     padding: 5%;
+    justify-content: center;
 }
-.invite {
-    display: flex;
-    align-items: center;
-    margin-bottom: 5%;
-}
-.invite img {
-    display: flex;
-    padding-right: 2%;
-}
-.blue {
-    color: #3eb5f1;
-}
-.pink {
-    color: #d7569c;
-}
-.star_img {
-    display: flex;
-    padding-right: 1%;
-}
-.grey-buttons {
+.reward {
     display: flex;
     width: 100%;
-    background-color: #1c1c1d;
     border-radius: 0.625rem;
-    padding: 2%;
-    cursor: pointer;
-    align-items: center;
     justify-content: space-between;
-    margin-bottom: 3%;
-    text-decoration: none;
-    color: #ffffff;
+    padding: 2%;
+    align-items: center;
+    background-color: #1c1c1d;
 }
 .left-side {
     display: flex;
@@ -82,30 +60,17 @@ body {
 .left-side img {
     padding-right: 5%;
 }
+.left-side span {
+    font-weight: semi-bold;
+}
 .right-side {
     display: flex;
     font-weight: semi-bold;
-    align-items: center;
+    vertical-align: center;
+    text-align: right;
+    flex-direction: column;
+    color: #00e015;
 }
-.join-button {
-    display: flex;
-    background-color: #3eb5f1;
-    justify-content: center;
-    width: 100%;
-    border-radius: 0.625rem;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    margin-top: 20%;
-    margin-bottom: 3%;
-    cursor: pointer;
-}
-.invite-button {
-    display: flex;
-    background-color: #d7569c;
-    justify-content: center;
-    width: 100%;
-    border-radius: 0.625rem;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    cursor: pointer;
+.operation-type {
+    font-size: 75%;
 }
