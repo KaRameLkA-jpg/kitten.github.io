@@ -2,7 +2,6 @@ body {
     background-image: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    padding-bottom: 4rem; /* Оставляем rem для отступов */
     color: #ffffff;
     font-family: "Open Sans", sans-serif;
     overflow: hidden;
@@ -36,17 +35,17 @@ body {
 
 .black-monitor {
     margin-top: -10%;
-    width: 100%;
+    width: 100vw;
     display: flex;
     background-color: #000000;
-    border-radius: 1.5vw; /* Используем vw для адаптации */
+    border-radius: 0.625rem; /* Используем vw для адаптации */
     flex-direction: column;
     padding: 5%;
 }
 
 .invite {
     display: flex;
-    width: 100vw; /* Адаптируем ширину */
+    width: 95vw; /* Адаптируем ширину */
     height: 3.125rem; /* Оставляем rem для высоты */
     align-items: center;
     margin-bottom: 1rem; /* Оставляем rem для отступов */
@@ -67,7 +66,7 @@ body {
 
 .grey-buttons {
     display: flex;
-    width: 100vw; /* Адаптируем ширину */
+    width: 95vw; /* Адаптируем ширину */
     height: 3.125rem; /* Оставляем rem для высоты */
     background-color: #1C1C1D;
     border-radius: 0.625rem; /* Оставляем rem для закругления углов */
@@ -101,7 +100,7 @@ body {
     background-color: #27A5C1;
     justify-content: center;
     align-items: center;
-    width: 100vw; /* Адаптируем ширину */
+    width: 95vw; /* Адаптируем ширину */
     height: 3.125rem; /* Оставляем rem для высоты */
     border-radius: 0.625rem; /* Оставляем rem для закругления углов */
     font-size: 1.25rem; /* Оставляем rem для шрифта */
