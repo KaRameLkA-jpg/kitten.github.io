@@ -44,6 +44,8 @@ body {
 }
 .invite {
     display: flex;
+    width: 21.875rem; /* 350 px */
+    height: 3.125rem;
     align-items: center;
     margin-bottom: 1.0625rem;
 }
@@ -59,10 +61,11 @@ body {
 }
 .grey-buttons {
     display: flex;
-    width: 100%;
+    width: 21.875rem; /* 350 px */
+    height: 3.125rem;
     background-color: #1C1C1D;
     border-radius: 0.625rem;
-    padding: 2.5%;
+    padding: 0 0.6875rem;
     cursor: pointer;
     align-items: center;
     justify-content: space-between;
@@ -82,37 +85,30 @@ body {
     display: flex;
     align-items: center;
 }
-.join-button {
-    display: flex;
-    background-color: #27A5C1;
-    justify-content: center;
-    width: 100%;
-    border-radius: 0.625rem;
-    padding-top: 1.4375rem;
-    padding-bottom: 1.4375rem;
-    cursor: pointer;
-    align-items: center;
-    position: absolute;
-    left: 50%;
-    font-size: 1.25rem;
-    transform: translateX(-50%);
-    bottom: 8.9375rem; /* Расстояние от нижнего края экрана */
-    max-width: 24.8125rem;
-}
+
+.join-button,
 .invite-button {
     display: flex;
     background-color: #27A5C1;
     justify-content: center;
-    width: 100%;
-    border-radius: 0.625rem;
-    padding-top: 1.4375rem;
-    padding-bottom: 1.4375rem;
-    cursor: pointer;
     align-items: center;
+    width: 21.875rem; /* 350 px */
+    height: 3.125rem; /* 50 px */
+    border-radius: 0.625rem;
+    font-size: 1.25rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
     position: absolute;
     left: 50%;
-    font-size: 1.25rem;
     transform: translateX(-50%);
-    bottom: 2.1875rem; /* Расстояние от нижнего края экрана */
-    max-width: 24.8125rem;
+}
+
+/* Для кнопки "Join our community", которая будет выше */
+.join-button {
+    bottom: 6.1875rem; /* Отступ от нижнего края экрана */
+}
+
+/* Для кнопки "Invite a friend", которая будет в самом низу */
+.invite-button {
+    bottom: 2.125rem; /* Отступ от нижнего края экрана */
 }
