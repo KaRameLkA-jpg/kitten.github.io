@@ -2,12 +2,9 @@ body {
     background-image: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    font-size: 1rem;
     padding-bottom: 4rem;
     color: #ffffff;
     font-family: "Open Sans", sans-serif;
-    width: 100%;
-    height: 100%;
     overflow: hidden;
     max-width: 24.8125rem;
     max-height: 47.75rem;
@@ -20,7 +17,7 @@ body {
 .main-interface {
     background-color: #27A5C1;
     display: flex;
-    width: 100%;
+    width: 24.8125rem;
     justify-content: center;
 }
 .main-interface span {
@@ -92,7 +89,7 @@ body {
     background-color: #27A5C1;
     justify-content: center;
     align-items: center;
-    width: 21.875rem; /* 350 px */
+    width: 22.775rem; /* 350 px */
     height: 3.125rem; /* 50 px */
     border-radius: 0.625rem;
     font-size: 1.25rem;
@@ -105,10 +102,10 @@ body {
 
 /* Для кнопки "Join our community", которая будет выше */
 .join-button {
-    bottom: 6.1875rem; /* Отступ от нижнего края экрана */
+    bottom: 6.0875rem; /* Отступ от нижнего края экрана */
 }
 
 /* Для кнопки "Invite a friend", которая будет в самом низу */
 .invite-button {
-    bottom: 2.125rem; /* Отступ от нижнего края экрана */
+    bottom: 2.025rem; /* Отступ от нижнего края экрана */
 }
