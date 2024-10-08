@@ -1,30 +1,4 @@
-@media screen and (min-width: 47.75rem) {
-    body,
-    .boost, 
-    .guid,
-    .frens,
-    .earn,
-    .index,
-    .tasks,
-    .mainkitty,
-    .wallet_bonus_style,
-    .login-page {
-        max-width: 24.8125rem;!important;
-        max-height: 47.75rem;!important;
-        margin: auto auto;
-        background-color: #111111;
-        background-size: 28.125rem;
-        background-position: center;
-
-    }
-    .slide  {
-        width: 19.5rem!important;
-    }
-    .frens-invite-button {
-        width: 26.5rem;
-    }
-}
-@media screen and (max-width: 47.75rem) {
+@media screen and (min-width: 47.75vw) {
     body,
     .boost,
     .guid,
@@ -35,18 +9,37 @@
     .mainkitty,
     .wallet_bonus_style,
     .login-page {
-        max-width: 24.8125rem;!important;
-        max-height: 47.75rem;!important;
+        max-width: 24.8125vw!important;
+        max-height: 47.75vh!important;
         margin: auto auto;
         background-color: #111111;
-        background-size: 28.125rem;
+        background-size: 28.125vw;
         background-position: center;
-
     }
     .slide  {
-        width: 19.5rem!important;
+        width: 19.5vw!important;
     }
     .frens-invite-button {
-        width: 26.5rem;
+        width: 26.5vw;
+    }
+}
+
+@media screen and (max-width: 47.75vw) {
+    body,
+    .boost,
+    .guid,
+    .frens,
+    .earn,
+    .index,
+    .tasks,
+    .mainkitty,
+    .wallet_bonus_style,
+    .login-page {
+        max-width: 24.8125vw!important;
+        max-height: 47.75vh!important;
+        margin: auto auto;
+        background-color: #111111;
+        background-size: 28.125vw;
+        background-position: center;
     }
 }

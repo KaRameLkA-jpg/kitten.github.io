@@ -2,67 +2,76 @@ body {
     background-image: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    padding-bottom: 4rem;
+    padding-bottom: 4rem; /* Оставляем rem для отступов */
     color: #ffffff;
     font-family: "Open Sans", sans-serif;
     overflow: hidden;
-    max-width: 24.8125rem;
-    max-height: 47.75rem;
-    touch-action: none; /* Запрещает масштабирование на сенсорных устройствах */
-    -ms-touch-action: none; /* Для поддержки Internet Explorer */
-    -webkit-user-select: none; /* Запрещает выделение текста на сенсорных устройствах */
-    -webkit-user-drag: none; /* Запрещает перетаскивание элементов на сенсорных устройствах */
+    max-width: 90vw; /* Увеличим ширину для адаптивности */
+    max-height: 90vh; /* Адаптируем высоту */
+    touch-action: none;
+    -ms-touch-action: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
     -webkit-tap-highlight-color: transparent;
 }
+
 .main-interface {
     background-color: #27A5C1;
     display: flex;
-    width: 24.8125rem;
+    width: 80vw; /* Используем vw для адаптации */
     justify-content: center;
 }
+
 .main-interface span {
-    align-items:center;
-    padding-top: 3.9375rem;
-    padding-bottom: 5.9375rem;
-    font-size: 2rem;
+    align-items: center;
+    padding-top: 4rem; /* Оставляем rem для отступов */
+    padding-bottom: 5rem; /* Используем rem для внутреннего пространства */
+    font-size: 2rem; /* Шрифты также на rem */
 }
+
 .cover {
     display: flex;
     justify-content: center;
 }
+
 .black-monitor {
     margin-top: -10%;
     width: 100%;
     display: flex;
     background-color: #000000;
-    border-radius: 1.5rem;
+    border-radius: 1.5vw; /* Используем vw для адаптации */
     flex-direction: column;
     padding: 5%;
 }
+
 .invite {
     display: flex;
-    width: 21.875rem; /* 350 px */
-    height: 3.125rem;
+    width: 80vw; /* Адаптируем ширину */
+    height: 3.125rem; /* Оставляем rem для высоты */
     align-items: center;
-    margin-bottom: 1.0625rem;
+    margin-bottom: 1rem; /* Оставляем rem для отступов */
 }
+
 .invite img {
     display: flex;
-    padding-right: 0.875rem;
+    padding-right: 0.875rem; /* Оставляем rem для отступов */
 }
+
 .blue {
     color: #27A5C1;
 }
+
 .pink {
     color: #d7569c;
 }
+
 .grey-buttons {
     display: flex;
-    width: 21.875rem; /* 350 px */
-    height: 3.125rem;
+    width: 80vw; /* Адаптируем ширину */
+    height: 3.125rem; /* Оставляем rem для высоты */
     background-color: #1C1C1D;
-    border-radius: 0.625rem;
-    padding: 0 0.6875rem;
+    border-radius: 0.625rem; /* Оставляем rem для закругления углов */
+    padding: 0 0.6875rem; /* Оставляем rem для отступов */
     cursor: pointer;
     align-items: center;
     justify-content: space-between;
@@ -70,14 +79,17 @@ body {
     text-decoration: none;
     color: #ffffff;
 }
+
 .left-side {
     display: flex;
     align-items: center;
     white-space: nowrap;
 }
+
 .left-side img {
-    padding-right: 0.625rem;
+    padding-right: 0.625rem; /* Оставляем rem для отступов */
 }
+
 .right-side {
     display: flex;
     align-items: center;
@@ -89,12 +101,12 @@ body {
     background-color: #27A5C1;
     justify-content: center;
     align-items: center;
-    width: 22.775rem; /* 350 px */
-    height: 3.125rem; /* 50 px */
-    border-radius: 0.625rem;
-    font-size: 1.25rem;
+    width: 80vw; /* Адаптируем ширину */
+    height: 3.125rem; /* Оставляем rem для высоты */
+    border-radius: 0.625rem; /* Оставляем rem для закругления углов */
+    font-size: 1.25rem; /* Оставляем rem для шрифта */
     cursor: pointer;
-    margin-bottom: 1rem;
+    margin-bottom: 1rem; /* Оставляем rem для отступов */
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -102,10 +114,10 @@ body {
 
 /* Для кнопки "Join our community", которая будет выше */
 .join-button {
-    bottom: 6.0875rem; /* Отступ от нижнего края экрана */
+    bottom: 6.0875rem; /* Оставляем rem для отступов от нижнего края */
 }
 
 /* Для кнопки "Invite a friend", которая будет в самом низу */
 .invite-button {
-    bottom: 2.025rem; /* Отступ от нижнего края экрана */
+    bottom: 2.025rem; /* Оставляем rem для отступов от нижнего края */
 }
