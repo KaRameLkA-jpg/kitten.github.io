@@ -9,8 +9,8 @@
     .mainkitty,
     .wallet_bonus_style,
     .login-page {
-        max-width: 24.8125rem;
-        max-height: 47.75rem;
+        max-width: 24.8125rem;!important;
+        max-height: 47.75rem;!important;
         margin: auto auto;
         background-color: #111111;
         background-size: 28.125rem;
@@ -35,8 +35,8 @@
     .mainkitty,
     .wallet_bonus_style,
     .login-page {
-        max-width: 24.8125rem;
-        max-height: 47.75rem;
+        max-width: 24.8125rem;!important;
+        max-height: 47.75rem;!important;
         margin: auto auto;
         background-color: #111111;
         background-size: 28.125rem;
