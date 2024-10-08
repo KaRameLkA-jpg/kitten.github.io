@@ -6,8 +6,8 @@ body {
     color: #ffffff;
     font-family: "Open Sans", sans-serif;
     overflow: hidden;
-    max-width: 90vw; /* Увеличим ширину для адаптивности */
-    max-height: 90vh; /* Адаптируем высоту */
+    max-width: 100vw; /* Увеличим ширину для адаптивности */
+    max-height: 100vh; /* Адаптируем высоту */
     touch-action: none;
     -ms-touch-action: none;
     -webkit-user-select: none;
@@ -16,9 +16,9 @@ body {
 }
 
 .main-interface {
-    background-color: #27A5C1;
     display: flex;
-    width: 80vw; /* Используем vw для адаптации */
+    background-color: #27A5C1;
+    width: 100vw; /* Используем vw для адаптации */
     justify-content: center;
 }
 
@@ -46,7 +46,7 @@ body {
 
 .invite {
     display: flex;
-    width: 80vw; /* Адаптируем ширину */
+    width: 100vw; /* Адаптируем ширину */
     height: 3.125rem; /* Оставляем rem для высоты */
     align-items: center;
     margin-bottom: 1rem; /* Оставляем rem для отступов */
@@ -67,7 +67,7 @@ body {
 
 .grey-buttons {
     display: flex;
-    width: 80vw; /* Адаптируем ширину */
+    width: 100vw; /* Адаптируем ширину */
     height: 3.125rem; /* Оставляем rem для высоты */
     background-color: #1C1C1D;
     border-radius: 0.625rem; /* Оставляем rem для закругления углов */
@@ -101,7 +101,7 @@ body {
     background-color: #27A5C1;
     justify-content: center;
     align-items: center;
-    width: 80vw; /* Адаптируем ширину */
+    width: 100vw; /* Адаптируем ширину */
     height: 3.125rem; /* Оставляем rem для высоты */
     border-radius: 0.625rem; /* Оставляем rem для закругления углов */
     font-size: 1.25rem; /* Оставляем rem для шрифта */
@@ -114,10 +114,10 @@ body {
 
 /* Для кнопки "Join our community", которая будет выше */
 .join-button {
-    bottom: 6.0875rem; /* Оставляем rem для отступов от нижнего края */
+    bottom: 6.0855rem; /* Оставляем rem для отступов от нижнего края */
 }
 
 /* Для кнопки "Invite a friend", которая будет в самом низу */
 .invite-button {
-    bottom: 2.025rem; /* Оставляем rem для отступов от нижнего края */
+    bottom: 2.005rem; /* Оставляем rem для отступов от нижнего края */
 }
