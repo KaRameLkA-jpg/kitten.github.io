@@ -35,10 +35,10 @@ body {
 
 .black-monitor {
     margin-top: -10%;
-    width: 100vw;
+    width: 95vw;
     display: flex;
     background-color: #000000;
-    border-radius: 0.625rem; /* Используем vw для адаптации */
+    border-radius: 3vw; /* Используем vw для адаптации */
     flex-direction: column;
     padding: 5%;
 }
@@ -113,10 +113,10 @@ body {
 
 /* Для кнопки "Join our community", которая будет выше */
 .join-button {
-    bottom: 6.0855rem; /* Оставляем rem для отступов от нижнего края */
+    bottom: 4.9rem; /* Оставляем rem для отступов от нижнего края */
 }
 
 /* Для кнопки "Invite a friend", которая будет в самом низу */
 .invite-button {
-    bottom: 2.005rem; /* Оставляем rem для отступов от нижнего края */
+    bottom: 1rem; /* Оставляем rem для отступов от нижнего края */
 }
