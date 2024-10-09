@@ -2,125 +2,148 @@ body {
     background-image: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    font-size: 16px;
-    padding-bottom: 4rem;
     color: #ffffff;
     font-family: "Open Sans", sans-serif;
-    width: 100%;
-    height: 100%;
     overflow: hidden;
-    max-width: 24.8125rem;
-    max-height: 47.75rem;
-    touch-action: none; /* Запрещает масштабирование на сенсорных устройствах */
-    -ms-touch-action: none; /* Для поддержки Internet Explorer */
-    -webkit-user-select: none; /* Запрещает выделение текста на сенсорных устройствах */
-    -webkit-user-drag: none; /* Запрещает перетаскивание элементов на сенсорных устройствах */
-    -webkit-tap-highlight-color: transparent; /* Убирает подсветку ссылок на сенсорных устройствах */
+    max-width: 100vw; /* Увеличим ширину для адаптивности */
+    max-height: 100vh; /* Адаптируем высоту */
+    touch-action: none;
+    -ms-touch-action: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .wallet_main_inf {
     display: flex;
-    width: 50%;
-    margin-left: 25%;
-    margin-top: 4%;
-    padding: 2.5%;
+    width: 50vw; /* Адаптируем ширину относительно экрана */
+    height: 6.25vh;
+    margin-left: 25vw; /* Центрируем по горизонтали */
+    margin-top: 1.0625rem; /* Отступ сверху относительно высоты экрана */
     background-color: #1c1c1d;
-    border-radius: 0.625rem;
+    border-radius: 0.625rem; /* Закругление остается в rem */
+    align-items: center;
     justify-content: space-between;
 }
-
+.wallet_main_inf img {
+    display: flex;
+    margin: 0.5rem;
+}
 .wallet_main_inf span {
     display: flex;
     font-weight: semi-bold;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    padding-left: 2%;
+    padding-left: 2vw; /* Адаптивный отступ */
     align-items: center;
-    font-size: 120%;
+    font-size: 1.2rem; /* Оставляем шрифт в rem */
 }
+
 .wallet_main_inf a {
-    padding-top: 4%;
     cursor: pointer;
 }
+
 .wallet_buttons {
     display: flex;
-    margin-top: 10%;
+    margin-top: 6.625vh; /* Адаптируем отступ по высоте */
     justify-content: space-around;
+    width: 100vw;
 }
+
 .wallet_buttons img {
     cursor: pointer;
 }
+
 .wallet_buttons a {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
 }
+
 .wallet_buttons a span {
     display: flex;
-    color: #0088cc;
+    color: #27A5C1;
+    margin-top: 0.3vh;
     text-align: center;
 }
+
 .wallet_bonus {
-    margin-top: 10%;
     display: flex;
-    width: 90%;
-    padding: 2%;
+    width: 90vw; /* Ширина адаптируется к ширине экрана */
+    margin-bottom: 2rem; /* Отступ по высоте экрана */
     background-color: #1c1c1d;
-    border-radius: 0.625rem;
-    cursor: pointer;
+    border-radius: 0.625rem; /* Оставляем в rem */
+    padding: 2vw; /* Внутренний отступ адаптирован */
     justify-content: space-between;
     align-items: center;
     text-decoration: none;
-    color: #ffffff;
+    color : white;
 }
+
 .coins_count {
     display: flex;
-    width: 90%;
-    margin-top: 3%;
+    width: 90vw; /* Ширина адаптируется к ширине экрана */
+    margin-bottom: 0.5rem;  /* Отступ по высоте экрана */
     background-color: #1c1c1d;
-    border-radius: 0.625rem;
-    padding: 2%;
+    border-radius: 0.625rem; /* Оставляем в rem */
+    padding: 2vw; /* Внутренний отступ адаптирован */
     justify-content: space-between;
     align-items: center;
 }
-.left-side{
+
+.left-side {
     display: flex;
     align-items: center;
     white-space: nowrap;
 }
+
 .left-side img {
-    padding-right: 3%;
+    padding-right: 3vw; /* Адаптированный отступ */
 }
+
 .left-side span {
-    padding-left: 2%;
+    padding-left: 2vw; /* Адаптированный отступ */
     white-space: nowrap;
 }
+
 .right-side {
     font-weight: semi-bold;
-    align-items:center;
+    align-items: center;
 }
+
 .transaction-hist {
     text-decoration: none;
     color: #ffffff;
     display: flex;
-    width: 50%;
-    padding: 0.5%;
+    width: 95vw; /* Ширина относительно экрана */
+    padding: 0.5vw; /* Внутренние отступы адаптированы */
+    height: 3.125rem;
     background-color: #1c1c1d;
-    border-radius: 0.625rem;
+    border-radius: 0.625rem; /* Оставляем в rem */
     cursor: pointer;
+    margin-bottom: 1rem;
     justify-content: space-between;
     align-items: center;
-    background-color: #1C1C1D;
-    box-shadow: 0 0 10px black;
+    font-size: 1.25rem;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 15px; /* Расстояние от нижнего края экрана */
-    max-width: 400px;
+    bottom: 1rem;
 }
+
 .cover {
     display: flex;
     justify-content: center;
+    width: 100vw;
+    height: 3.125rem;
+    margin-top: 2.0625vh;
+}
+.cover1 {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 3.125rem;
+    margin-top: 8.39vh;
 }
