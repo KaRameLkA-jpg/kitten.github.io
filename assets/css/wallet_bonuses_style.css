@@ -16,8 +16,8 @@ body {
 
 .main-interface {
     display: flex;
+    width: 100vw;
     background-color: #27A5C1;
-    width: 100vw; /* Используем vw для адаптации */
     justify-content: center;
 }
 
@@ -30,6 +30,7 @@ body {
 
 .cover {
     display: flex;
+    width: 100vw;
     justify-content: center;
 }
 
