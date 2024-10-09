@@ -35,10 +35,10 @@ body {
 
 .black-monitor {
     margin-top: -10%;
-    width: 85vw;
+    width: 100vw;
     display: flex;
     background-color: #000000;
-    border-radius: 2vw; /* Используем vw для адаптации */
+    border-radius: 2rem; /* Используем vw для адаптации */
     flex-direction: column;
     padding: 5%;
 }
