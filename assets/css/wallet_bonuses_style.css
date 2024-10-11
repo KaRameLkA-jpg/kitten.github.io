@@ -33,17 +33,18 @@ body {
 
 .main-interface {
     display: flex;
+    justify-content: center; /* Выровнять содержимое по центру горизонтально */
+    align-items: center; /* Выровнять содержимое по центру вертикально */
     width: 100vw;
-    text-align: center;
-    align-items: center;
     background-color: #27A5C1;
+    text-align: center; /* Это не обязательно при flex, но можно оставить */
 }
 
 .main-interface span {
-    display: flex;
-    padding-top: 4rem; /* Оставляем rem для отступов */
-    padding-bottom: 5rem; /* Используем rem для внутреннего пространства */
-    font-size: 2rem; /* Шрифты также на rem */
+    padding-top: 4rem; /* Отступ сверху */
+    padding-bottom: 5rem; /* Отступ снизу */
+    font-size: 2rem; /* Размер шрифта */
+    display: inline-block; /* Можем оставить flex или заменить на inline-block */
 }
 
 .cover {

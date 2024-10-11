@@ -89,10 +89,9 @@ body {
 .cover {
     display: flex;
     width: 100vw;
-    margin-top: 4.33vw;
+    margin-top: 2.0625rem;
     align-items: center;
     flex-direction: column; /* Размещаем элементы вертикально */
-    gap: 0.5rem; /* Зазор между элементами */
 }
 
 .coins_count1, .coins_count2, .coins_count3, .coins_count4 {
