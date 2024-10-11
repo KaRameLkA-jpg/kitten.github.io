@@ -44,18 +44,18 @@ body {
 /* Заголовок */
 .header {
     display: flex;
-    background-color: #27A5C1;
+    justify-content: center; /* Выровнять содержимое по центру горизонтально */
+    align-items: center; /* Выровнять содержимое по центру вертикально */
     width: 100vw;
-    height: 22.25vh;
-    text-align: center;
-    justify-content: center;
-    padding: 3vh 0;
+    background-color: #27A5C1;
+    text-align: center; /* Это не обязательно при flex, но можно оставить */
 }
 
 .header span {
-    color: white;
+    padding-top: 4rem; /* Отступ сверху */
+    padding-bottom: 5rem; /* Отступ снизу */
     font-size: 2rem; /* Размер шрифта */
-    margin: 0;
+    display: inline-block; /* Можем оставить flex или заменить на inline-block */
 }
 
 /* Список друзей */
