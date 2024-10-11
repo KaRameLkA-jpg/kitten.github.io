@@ -1,106 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:active {
+    color: rgba(241,158,54,1);
+}
+
+html {
+    font-family: sans-serif;
+}
 body {
     background-image: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    font-size: 16px;
-    padding-bottom: 4rem;
     color: #ffffff;
     font-family: "Open Sans", sans-serif;
-    width: 100%;
-    height: 100%;
     overflow: hidden;
-    max-width: 24.8125rem;
-    max-height: 47.75rem;
-    touch-action: none; /* Запрещает масштабирование на сенсорных устройствах */
-    -ms-touch-action: none; /* Для поддержки Internet Explorer */
-    -webkit-user-select: none; /* Запрещает выделение текста на сенсорных устройствах */
-    -webkit-user-drag: none; /* Запрещает перетаскивание элементов на сенсорных устройствах */
+    max-width: 100vw; /* Увеличим ширину для адаптивности */
+    max-height: 100vh; /* Адаптируем высоту */
+    touch-action: none;
+    -ms-touch-action: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
     -webkit-tap-highlight-color: transparent;
 }
-.main-interface {
-    background-color: #d7569c;
+
+.container {
+    width: 100vw;
+    min-height: 100vh;
     display: flex;
-    width: 100%;
-    justify-content: center;
     flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #000;
 }
-.main-interface span {
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    padding-top: 5%;
-    margin-bottom: 5%;
-    font-size: 200%;
+
+/* Заголовок */
+.header {
+    background-color: #27A5C1;
+    width: 100vw;
+    text-align: center;
+    padding: 3vh 0;
 }
-.friends-count {
-    margin-bottom: 15%;
+
+.header h1 {
+    color: white;
+    font-size: 4vw;
+    margin: 0;
+}
+
+/* Список друзей */
+.friends-list {
+    background-color: #1C1C1D;
+    width: 90vw;
+    margin-top: 2vh;
+    border-radius: 1rem;
+    padding: 2vh;
+}
+
+.friend {
     display: flex;
-    font-size: 50%;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 2vh 2vw;
+    border-radius: 0.8rem;
+    margin-bottom: 1.5vh;
+}
+
+.friend-info {
+    display: flex;
     align-items: center;
 }
-.cover {
-    display: flex;
-    justify-content: center;
+
+.user-icon {
+    width: 8vw;
+    height: 8vw;
+    margin-right: 3vw;
 }
-.black-monitor {
-    margin-top: -10%;
-    width: 100%;
-    display: flex;
-    background-color: #000000;
-    border-radius: 1.25rem;
-    flex-direction: column;
-    padding: 5%;
-    justify-content: center;
+
+.friend-name {
+    color: white;
+    font-size: 3vw;
 }
+
+/* Награда друга */
 .reward {
     display: flex;
-    width: 100%;
-    border-radius: 0.625rem;
-    justify-content: space-between;
-    padding: 2%;
-    align-items: center;
-    background-color: #1c1c1d;
-}
-.left-side {
-    display: flex;
-    align-items: center;
-    white-space: nowrap;
-}
-.left-side img {
-    padding-right: 5%;
-}
-.left-side span {
-    font-weight: semi-bold;
-}
-.right-side {
-    display: flex;
-    font-weight: semi-bold;
-    vertical-align: center;
-    text-align: right;
     flex-direction: column;
-    color: #00e015;
+    align-items: flex-end;
 }
-.operation-type {
-    font-size: 75%;
+
+.reward-amount {
+    color: #00FF00;
+    font-size: 3vw;
 }
+
+.status {
+    color: #00FF00;
+    font-size: 2vw;
+}
+
+/* Кнопка пригласить друга */
 .invite-button {
-    display: flex;
-    background-color: #d7569c;
-    justify-content: center;
+    margin-top: 2vh;
+    width: 90vw;
+}
+
+.invite-button button {
     width: 100%;
-    border-radius: 0.625rem;
-    padding-top: 1%;
-    padding-bottom: 1%;
+    padding: 2vh 0;
+    background-color: #27A5C1;
+    color: white;
+    font-size: 3.5vw;
+    border: none;
+    border-radius: 0.8rem;
     cursor: pointer;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    box-shadow: 0 0 10px black;
-    position: absolute;
-    left: 50%;
-    font-size: 125%;
-    transform: translateX(-50%);
-    bottom: 15px; /* Расстояние от нижнего края экрана */
-    max-width: 400px;
 }

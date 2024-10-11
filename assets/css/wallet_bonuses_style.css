@@ -43,7 +43,7 @@ body {
 .main-interface span {
     padding-top: 4rem; /* Отступ сверху */
     padding-bottom: 5rem; /* Отступ снизу */
-    font-size: 2rem; /* Размер шрифта */
+    font-size: 4vw;
     display: inline-block; /* Можем оставить flex или заменить на inline-block */
 }
 

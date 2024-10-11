@@ -136,7 +136,7 @@ body {
     text-decoration: none;
     color: #ffffff;
     display: flex;
-    width: 98vw; /* Ширина относительно экрана */
+    width: 92vw; /* Ширина относительно экрана */
     padding: 0.6vw; /* Внутренние отступы адаптированы */
     height: 6.55vh;
     background-color: #1c1c1d;
