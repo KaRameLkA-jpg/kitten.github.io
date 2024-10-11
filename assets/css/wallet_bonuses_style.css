@@ -1,3 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:active {
+    color: rgba(241,158,54,1);
+}
+
+html {
+    font-family: sans-serif;
+}
 body {
     background-image: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 100%);
     background-repeat: no-repeat;
@@ -21,6 +38,7 @@ body {
 }
 
 .main-interface span {
+    display: flex;
     align-items: center;
     padding-top: 4rem; /* Оставляем rem для отступов */
     padding-bottom: 5rem; /* Используем rem для внутреннего пространства */

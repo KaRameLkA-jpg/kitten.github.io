@@ -1,3 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:active {
+    color: rgba(241,158,54,1);
+}
+
+html {
+    font-family: sans-serif;
+}
 body {
     background-image: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 100%);
     background-repeat: no-repeat;
@@ -17,7 +34,7 @@ body {
 .wallet_main_inf {
     display: flex;
     width: 50vw; /* Адаптируем ширину относительно экрана */
-    height: 6.25vh;
+    height: 6.54vh;
     margin-left: 25vw; /* Центрируем по горизонтали */
     margin-top: 1.0625rem; /* Отступ сверху относительно высоты экрана */
     background-color: #1c1c1d;
@@ -117,8 +134,8 @@ body {
     text-decoration: none;
     color: #ffffff;
     display: flex;
-    width: 95vw; /* Ширина относительно экрана */
-    padding: 0.5vw; /* Внутренние отступы адаптированы */
+    width: 93vw; /* Ширина относительно экрана */
+    padding: 0.6vw; /* Внутренние отступы адаптированы */
     height: 3.125rem;
     background-color: #1c1c1d;
     border-radius: 0.625rem; /* Оставляем в rem */
@@ -137,13 +154,13 @@ body {
     display: flex;
     justify-content: center;
     width: 100vw;
-    height: 3.125rem;
+    height: 6.54vh;
     margin-top: 2.0625vh;
 }
 .cover1 {
     display: flex;
     justify-content: center;
     width: 100vw;
-    height: 3.125rem;
+    height: 6.54vh;
     margin-top: 8.39vh;
 }
