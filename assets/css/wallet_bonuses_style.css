@@ -34,13 +34,13 @@ body {
 .main-interface {
     display: flex;
     width: 100vw;
+    text-align: center;
+    align-items: center;
     background-color: #27A5C1;
 }
 
 .main-interface span {
     display: flex;
-    align-items: center;
-    text-align: center;
     padding-top: 4rem; /* Оставляем rem для отступов */
     padding-bottom: 5rem; /* Используем rem для внутреннего пространства */
     font-size: 2rem; /* Шрифты также на rem */
@@ -73,8 +73,6 @@ body {
 .invite img {
     display: flex;
     padding-right: 0.875rem; /* Оставляем rem для отступов */
-    width: 5.89vw;
-    height: 5.89vh;
 }
 
 .blue {
@@ -87,7 +85,7 @@ body {
 
 .grey-buttons {
     display: flex;
-    width: 89vw; /* Адаптируем ширину */
+    width: 92vw; /* Адаптируем ширину */
     height: 6.55vh; /* Оставляем rem для высоты */
     background-color: #1C1C1D;
     border-radius: 0.625rem; /* Оставляем rem для закругления углов */
@@ -108,8 +106,6 @@ body {
 
 .left-side img {
     padding-right: 0.625rem; /* Оставляем rem для отступов */
-    width: 5.89vw;
-    height: 5.89vh;
 }
 
 .right-side {

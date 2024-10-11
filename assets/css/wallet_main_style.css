@@ -70,8 +70,6 @@ body {
 
 .wallet_buttons img {
     cursor: pointer;
-    width: 5.89vw;
-    height: 5.89vh;
 }
 
 .wallet_buttons a {
@@ -88,40 +86,51 @@ body {
     text-align: center;
 }
 
-.coins_count {
+.cover {
     display: flex;
-    width: 90vw; /* Ширина адаптируется к ширине экрана */
-    height: 6.54vh;
-    margin-bottom: 0.5rem;  /* Отступ по высоте экрана */
-    background-color: #1c1c1d;
-    border-radius: 0.625rem; /* Оставляем в rem */
+    width: 100vw;
+    margin-top: 4.33vw;
+    align-items: center;
+    flex-direction: column; /* Размещаем элементы вертикально */
+    gap: 0.5rem; /* Зазор между элементами */
+}
+
+.coins_count1, .coins_count2, .coins_count3, .coins_count4 {
+    display: flex;
+    width: 92vw; /* Адаптируем ширину */
+    height: 6.55vh; /* Оставляем rem для высоты */
+    background-color: #1C1C1D;
+    border-radius: 0.625rem; /* Оставляем rem для закругления углов */
+    padding: 0 0.6875rem; /* Оставляем rem для отступов */
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-between; /* Распределение элементов по краям */
+    margin-bottom: 0.5rem;
+}
+
+.coins_count1 a {
+    display: flex;
+    text-decoration: none;
+    color: #ffffff;
+    width: 100vw; /* Это важно для корректного выравнивания */
     justify-content: space-between;
     align-items: center;
-    text-decoration: none;
-    color : white;
 }
 
 .left-side {
     display: flex;
     align-items: center;
-    white-space: nowrap;
 }
 
 .left-side img {
-    padding-right: 2rem; /* Адаптированный отступ */
-    width: 5.89vw;
-    height: 5.89vh;
+    margin-right: 1rem;
 }
 
-.left-side span {
-    padding-left: 2vw; /* Адаптированный отступ */
-    white-space: nowrap;
-}
-
-.right-side {
-    font-weight: semi-bold;
+.right-side1 {
+    margin-left: auto; /* Автоматически сдвигает содержимое вправо */
+    display: flex;
+    justify-content: flex-end; /* Дополнительное выравнивание по правому краю */
     align-items: center;
-    padding-right: 1rem;
 }
 
 .transaction-hist {
@@ -144,15 +153,5 @@ body {
     bottom: 1rem;
 }
 
-.cover {
-    display: flex;
-    justify-content: center;
-    width: 100vw;
-    margin-top: 2.0625vh;
-}
-.cover1 {
-    display: flex;
-    justify-content: center;
-    width: 100vw;
-    margin-top: 8.39vh;
-}
+
+
