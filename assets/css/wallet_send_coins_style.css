@@ -8,6 +8,8 @@ a {
     text-decoration: none;
 }
 
+
+
 a:active {
     color: rgba(241,158,54,1);
 }
@@ -86,23 +88,25 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
-    padding: 2vh 2vw;
+    background-color: #2B2B2B;
+    padding: 1vh 1vw;
     border-top: 1px solid #444;
     position: relative;
+    top: 4.5rem;
+    cursor: pointer;
 }
 
 /* Удаление границы сверху у первого элемента */
 .coin.first {
     border-top: none;
-    border-top-left-radius: 0.8rem;
-    border-top-right-radius: 0.8rem;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
 }
 
 /* Удаление границы снизу у последнего элемента */
 .coin.last {
-    border-bottom-left-radius: 0.8rem;
-    border-bottom-right-radius: 0.8rem;
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
 }
 
 
@@ -120,17 +124,18 @@ body {
 
 .coin-name {
     color: white;
-    font-size: 3vw;
+    font-size: 1.5rem;
 }
 
 .coin-balance{
     color: #888;
-    font-size: 2.5vw;
+    font-size: 1.5rem;
     font-weight: normal;
 }
 
 /* Галочка для выбранного элемента */
 .check-mark img{
+    display: flex;
     width: 4.13vw;
     height: 5vh;
 }
@@ -156,4 +161,8 @@ body {
     left: 50%;
     transform: translateX(-50%);
     bottom: 1rem;
+}
+
+.selected .check-icon {
+    display: block;
 }
