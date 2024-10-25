@@ -73,7 +73,6 @@ body {
 .content h2 {
     color: white;
     text-align: center;
-    font-size: 2rem;
     margin-bottom: 2vh;
     font-weight: normal;
 }
@@ -126,12 +125,10 @@ body {
 
 .coin-name {
     color: white;
-    font-size: 1.5rem;
 }
 
 .coin-balance{
     color: #888;
-    font-size: 1.5rem;
     font-weight: normal;
 }
 
