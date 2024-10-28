@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <title>Wallet</title>
-  <link rel="stylesheet" href="./assets/css/wallet_send_coins_adress_style.css">
+  <link rel="stylesheet" href="./assets/css/wallet_send_coins_2.css">
   <link rel="stylesheet" href="./assets/css/responsive.css">
   <meta name="theme-color" content="#0a0a0a" />
 </head>
@@ -14,17 +14,22 @@
     <span>Send Coins</span>
   </div>
   <div class="content">
-    <h2>Enter wallet adress  </h2>
+    <h2>Enter amount of coins  </h2>
     <div class="coin-list">
       <div class="adress-contener" onclick="showInput()">
-        <img src="./assets/images/wallet.svg" width="35px">
-        <span class="silver-name" id="placeholder-text">wallet adress</span>
+        <img src="./assets/images/user_icon.svg" width="35px">
+        <span>Send to</span>
+        <span class="name"> Russia</span>
+      </div>
+      <div class="put_money">
+        <span class="silver-num" id="placeholder-text">0</span>
         <input
                 type="text"
                 id="wallet-input"
                 class="wallet-input"
                 oninput="checkInput()"
                 onblur="hideInput()">
+        <span class="gold_name">KITN</span>
         <img src="./assets/images/Wait.svg" id="status-icon" width="25px">
       </div>
     </div>
@@ -35,7 +40,7 @@
 </div>
 </div>
 
-<script src="./assets/js/wallet_send_coins_adress.js"></script>
+<script src="./assets/js/wallet_send_coins_2.js"></script>
 
 </body>
 </html>

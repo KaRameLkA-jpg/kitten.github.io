@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+a:active {
+    color: rgba(241,158,54,1);
+}
+
+html {
+    font-family: sans-serif;
+}
+body {
+    background-image: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    overflow: hidden;
+    max-width: 100vw; /* Увеличим ширину для адаптивности */
+    max-height: 100vh; /* Адаптируем высоту */
+    touch-action: none;
+    -ms-touch-action: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-tap-highlight-color: transparent;
+}
+.container {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #000;
+}
+
+/* Заголовок */
+.header {
+    display: flex;
+    justify-content: center; /* Выровнять содержимое по центру горизонтально */
+    align-items: center; /* Выровнять содержимое по центру вертикально */
+    width: 100vw;
+    background-color: #27A5C1;
+    text-align: center; /* Это не обязательно при flex, но можно оставить */
+}
+
+.header span {
+    padding-top: 4rem; /* Отступ сверху */
+    padding-bottom: 5rem; /* Отступ снизу */
+    font-size: 2rem; /* Размер шрифта */
+    display: inline-block; /* Можем оставить flex или заменить на inline-block */
+}
+
+/* Контент */
+.content {
+    margin-top: -10%;
+    width: 100vw;
+    display: flex;
+    background-color: #000000;
+    border-radius: 1.5rem; /* Используем vw для адаптации */
+    flex-direction: column;
+    padding: 5%;
+}
+
+.content h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 2vh;
+    font-weight: normal;
+}
+
+/* Список монет */
+.coin-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.adress-contener {
+    display: flex;
+    align-items: center;
+    width: 92vw; /* Адаптируем ширину */
+    height: 6.55vh;
+    padding: 2vh 2vw;
+    margin-bottom: 1.5vh;
+    cursor: pointer;
+    position: relative;
+}
+
+.silver-num {
+    display: flex;
+    color: #565656;
+    margin-left: 0.6rem; /* Отступ между первой картинкой и текстом */
+    width: 8vw;
+    height: 8vh;
+    font-size:3.25rem ;
+    align-items: center;
+}
+.gold_name{
+    display: flex;
+    color: white;
+    margin-left: 0.6rem; /* Отступ между первой картинкой и текстом */
+    width: 8vw;
+    height: 8vh;
+    font-size:3.25rem ;
+    align-items: center;
+}
+
+.wallet-input {
+    display: none;
+    flex-grow: 1;
+    margin-left: 0.6rem;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+}
+.adress-contener img{
+    width: 0.9375rem;
+    height: 0.9375rem;
+}
+
+.name {
+    font-weight: bold;
+    margin-left: 0.5rem;
+}
+.put_money{
+    display: flex;
+    align-items: center;
+    width: 92vw; /* Адаптируем ширину */
+    height: 6.55vh;
+    padding: 2vh 2vw;
+    margin-bottom: 1.5vh;
+    cursor: pointer;
+    position: relative;
+    top: 4.5rem;
+}
+.put_money img{
+    display: flex;
+    width: 8vw;
+    height: 8vh;
+    align-items: center;
+}
+.put_money img:last-child {
+    margin-left: auto; /* Отодвигает последнее изображение вправо */
+}
+
+
+/* Кнопка Next */
+.next-button {
+    margin-top: 2vh;
+    width: 90vw;
+}
+.next-button span{
+    color: white;
+    text-decoration: none;
+}
+
+.next-button span {
+    display: flex;
+    background-color: #27A5C1;
+    justify-content: center;
+    align-items: center;
+    width: 95vw; /* Адаптируем ширину */
+    height: 3.125rem; /* Оставляем rem для высоты */
+    border-radius: 0.625rem; /* Оставляем rem для закругления углов */
+    font-size: 1.25rem; /* Оставляем rem для шрифта */
+    cursor: pointer;
+    margin-bottom: 1rem; /* Оставляем rem для отступов */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 1rem;
+}
+
+.selected .check-icon {
+    display: block;
+}

@@ -24,11 +24,11 @@ function handleNext() {
     // Проверяем, какая монета выбрана, и перенаправляем на соответствующую страницу
     if (selectedCoin) {
         if (selectedCoin.classList.contains('first')) {
-            window.location.href = './wallet_send_coins_1.html'; // Страница для "Your friend in Telegram"
+            window.location.href = './wallet_send_coins_2.html'; // Страница для "Your friend in Telegram"
         } else if (selectedCoin.classList.contains('last')) {
             window.location.href = './wallet_send_coins_adress.html'; // Страница для "Wallet address"
         } else {
-            window.location.href = './wallet_send_coins_3.html'; // Страница для "Your friend in app"
+            window.location.href = './wallet_send_coins_1.html'; // Страница для "Your friend in app"
         }
     } else {
         alert('Please select a coin before proceeding.');
@@ -38,3 +38,4 @@ function handleNext() {
 
 // Добавляем обработчик события на кнопку "Next"
 document.getElementById('nextButton').addEventListener('click', handleNext);
+
