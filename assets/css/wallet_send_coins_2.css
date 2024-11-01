@@ -141,7 +141,6 @@ body {
     margin-bottom: 1.5vh;
     cursor: pointer;
     position: relative;
-    top: 4.5rem;
 }
 .put_money img{
     display: flex;
@@ -152,6 +151,35 @@ body {
 .put_money img:last-child {
     margin-left: auto; /* Отодвигает последнее изображение вправо */
 }
+/*Баланс*/
+.balance-display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 5.625rem;
+}
+
+.balance-display img {
+    margin-right: 0.5rem;
+}
+
+.balance-text {
+    display: flex;
+    flex-direction: column; /* Размещаем текст сверху вниз */
+    align-items: flex-start; /* Выравниваем по левому краю */
+}
+
+.balance {
+    font-size: 0.75rem;
+    color: #565656;
+}
+
+.number_balance {
+    font-size: 1.5rem;
+    color: white;
+}
+
 
 
 /* Кнопка Next */

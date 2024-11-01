@@ -14,11 +14,14 @@ function hideInput() {
     if (walletInput.value === '') {
         placeholderText.style.display = 'block';
         walletInput.style.display = 'none';
+    } else {
+        placeholderText.style.display = 'none';
     }
 
-    // Перемещаем фокус на другой элемент
-    document.body.focus();
+    // Удаляем фокус с поля ввода, чтобы скрыть клавиатуру
+    walletInput.blur();
 }
+
 function checkInput() {
     const walletInput = document.getElementById('wallet-input');
     const statusIcon = document.getElementById('status-icon');
@@ -47,6 +50,6 @@ function goNext() {
     localStorage.setItem('walletAddress', walletInput);
 
     // Переходим на следующую страницу
-    window.location.href = './wallet_send_coins_2.html';
+    window.location.href = './wallet_send_coins_21.html';
 }
 

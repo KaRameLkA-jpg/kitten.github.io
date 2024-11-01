@@ -7,8 +7,6 @@ function showInput() {
     walletInput.focus(); // Устанавливаем фокус на поле ввода
 }
 
-const userBalance = 1789; // Укажите баланс пользователя
-
 function checkInput() {
     const walletInput = document.getElementById('wallet-input');
     const statusIcon = document.getElementById('status-icon');
@@ -33,7 +31,6 @@ function checkInput() {
         nextButton.style.opacity = '0.5';
     }
 }
-
 
 function hideInput() {
     const walletInput = document.getElementById('wallet-input');
@@ -70,5 +67,3 @@ document.addEventListener('DOMContentLoaded', () => {
         nameElement.textContent = "error";
     }
 });
-
-
